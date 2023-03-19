@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  padding:0 10% 0 10%;
+  padding:0 5% 0 5%;
   font-size:11pt;
   font-weight: 200;
   margin:0;
@@ -259,14 +259,25 @@ h4 ~ p {
   margin-left:4em;
 }
 
-tr.latetask {
+.latetask {
   color: red;
 }
-tr.soontask {
+.soontask {
   color: green;
 }
-tr.upcomingtask {
+.upcomingtask {
   color: yellowgreen;
+}
+
+td.latetask,
+td.soontask,
+td.upcomingtask {
+  text-align: center;
+  width:5em;
+}
+
+tr.project td {
+  font-size: 125%;
 }
 
 .recurrencetext {
