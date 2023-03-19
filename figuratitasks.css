@@ -9,7 +9,7 @@ body {
 #nav {
   position: absolute;
   top: 3px;
-  left: 11%;
+  left: 6%;
   font-size:8pt;
 }
 
@@ -232,7 +232,7 @@ h3.actiongroup {
 div.header {
   position: absolute;
   top: 3px;
-  right: 11%;
+  right: 6%;
   font-size:8pt;
 }
 
@@ -278,6 +278,10 @@ td.upcomingtask {
 
 tr.project td {
   font-size: 125%;
+  padding:0.4em;
+}
+tr.project td a {
+  text-decoration: none;
 }
 
 .recurrencetext {
