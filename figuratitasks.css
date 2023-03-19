@@ -278,6 +278,7 @@ td.upcomingtask {
 
 tr.project td {
   font-size: 125%;
+  font-weight: 700;
   padding:0.4em;
 }
 tr.project td a {
