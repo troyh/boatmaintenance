@@ -12,18 +12,25 @@
         var elem = document.querySelector("#"+id+" .jsondata");
         elem.style.display = elem.style.display !== 'block' ? 'block' : 'none';
       }
+      function toggleTaskNotes(id) {
+        console.log(id);
+        console.log("div#task_"+id+" .tasknotes");
+        var elem = document.querySelector("#task_"+id+" .tasknotes");
+        elem.style.display = elem.style.display !== 'block' ? 'block' : 'none';
+      }
     </script>
     <title>Azimut 60 Maintenance</title>
   </head>
   <body>
     <div class="header">
-      <div>Mon Mar 27 2023 08:42:06 GMT-0700 (Pacific Daylight Time)</div>
+      <div>Tue Mar 28 2023 08:33:59 GMT-0700 (Pacific Daylight Time)</div>
     </div>
     <div id="nav"><a href="/boatmaintenance">Home</a></div>
     <div class="pagetitle">Azimut 60 Maintenance</div>
     <div id="taskscontent">
 
-      <div><p><a href="https://azimutyachts.com/en/fly-series/fly-60/">Azimut 60 Flybridge</a>.</p>
+      <div><p>bear://x-callback-url/open-note?id=3D60F59D-8E2C-4208-9F1B-247103715532</p>
+<p><a href="https://azimutyachts.com/en/fly-series/fly-60/">Azimut 60 Flybridge</a>.</p>
 <table>
 <thead>
 <tr>
@@ -577,7 +584,7 @@ White House, Tennessee 37188<br>
               </td>
               <td>
                 <div id="task_7WCvJXGok3N2fCepuPBmTP">
-                  <h3>Electrical &#9656; Battery 6-month inspection</h3>
+                  <h3>Electrical &#9656; Battery 6-month inspection<span class="seenotesbutton" onclick="toggleTaskNotes('7WCvJXGok3N2fCepuPBmTP')">&#8226;&#8226;&#8226;</span></h3>
                   <div class="jsondata"><pre>{
   "uuid": "7WCvJXGok3N2fCepuPBmTP",
   "userModificationDate": "2023-03-14T05:01:26.680Z",
@@ -794,7 +801,7 @@ White House, Tennessee 37188<br>
               </td>
               <td>
                 <div id="task_KPXUF88ZiRk3NKTP1j7mdS">
-                  <h3>Electrical &#9656; Electrical inspections</h3>
+                  <h3>Electrical &#9656; Electrical inspections<span class="seenotesbutton" onclick="toggleTaskNotes('KPXUF88ZiRk3NKTP1j7mdS')">&#8226;&#8226;&#8226;</span></h3>
                   <div class="jsondata"><pre>{
   "uuid": "KPXUF88ZiRk3NKTP1j7mdS",
   "userModificationDate": "2023-03-13T22:15:32.937Z",
@@ -1054,7 +1061,7 @@ White House, Tennessee 37188<br>
               </td>
               <td>
                 <div id="task_U9yUBrZwXXeGkUwZGbDDZx">
-                  <h3>Electrical &#9656; Open all battery boxes &amp; inspect</h3>
+                  <h3>Electrical &#9656; Open all battery boxes &amp; inspect<span class="seenotesbutton" onclick="toggleTaskNotes('U9yUBrZwXXeGkUwZGbDDZx')">&#8226;&#8226;&#8226;</span></h3>
                   <div class="jsondata"><pre>{
   "uuid": "U9yUBrZwXXeGkUwZGbDDZx",
   "userModificationDate": "2023-03-13T18:47:05.191Z",
@@ -1489,7 +1496,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
               </td>
               <td>
                 <div id="task_NidFeRBh1Ne5S9iC2KhVMj">
-                  <h3>Generator &#9656; Check the function of the siphon break (every 250 hours or 3 months)</h3>
+                  <h3>Generator &#9656; Check the function of the siphon break (every 250 hours or 3 months)<span class="seenotesbutton" onclick="toggleTaskNotes('NidFeRBh1Ne5S9iC2KhVMj')">&#8226;&#8226;&#8226;</span></h3>
                   <div class="jsondata"><pre>{
   "uuid": "NidFeRBh1Ne5S9iC2KhVMj",
   "userModificationDate": "2023-03-12T19:58:37.892Z",
@@ -1643,7 +1650,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
               </td>
               <td>
                 <div id="task_FAEVTnkXb5T81bbB68pSVe">
-                  <h3>Generator &#9656; Check the seawater pump impeller (every 250 hours or 3 months)</h3>
+                  <h3>Generator &#9656; Check the seawater pump impeller (every 250 hours or 3 months)<span class="seenotesbutton" onclick="toggleTaskNotes('FAEVTnkXb5T81bbB68pSVe')">&#8226;&#8226;&#8226;</span></h3>
                   <div class="jsondata"><pre>{
   "uuid": "FAEVTnkXb5T81bbB68pSVe",
   "userModificationDate": "2023-03-12T19:58:56.105Z",
@@ -1702,7 +1709,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
               </td>
               <td>
                 <div id="task_LnoP92VM6J8JCzZMboAS4q">
-                  <h3>Generator &#9656; Check the seawater pump belt tension (every 250 hours or 3 months)</h3>
+                  <h3>Generator &#9656; Check the seawater pump belt tension (every 250 hours or 3 months)<span class="seenotesbutton" onclick="toggleTaskNotes('LnoP92VM6J8JCzZMboAS4q')">&#8226;&#8226;&#8226;</span></h3>
                   <div class="jsondata"><pre>{
   "uuid": "LnoP92VM6J8JCzZMboAS4q",
   "userModificationDate": "2023-03-12T19:59:02.248Z",
@@ -1826,7 +1833,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
               </td>
               <td>
                 <div id="task_Riz5tMHyNTHe1dNtGzhVRX">
-                  <h3>Update hours</h3>
+                  <h3>Update hours<span class="seenotesbutton" onclick="toggleTaskNotes('Riz5tMHyNTHe1dNtGzhVRX')">&#8226;&#8226;&#8226;</span></h3>
                   <div class="jsondata"><pre>{
   "uuid": "Riz5tMHyNTHe1dNtGzhVRX",
   "userModificationDate": "2023-03-07T17:41:28.144Z",
@@ -1910,7 +1917,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
               </td>
               <td>
                 <div id="task_PkVpC7byz8m7zX5mAy4dxg">
-                  <h3>Disinfect fresh water tank</h3>
+                  <h3>Disinfect fresh water tank<span class="seenotesbutton" onclick="toggleTaskNotes('PkVpC7byz8m7zX5mAy4dxg')">&#8226;&#8226;&#8226;</span></h3>
                   <div class="jsondata"><pre>{
   "uuid": "PkVpC7byz8m7zX5mAy4dxg",
   "userModificationDate": "2023-03-04T02:03:09.546Z",
@@ -2201,7 +2208,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="XHxC7ztajCHDAosLttUGTK" class="completedtask">
+                      <div id="task_XHxC7ztajCHDAosLttUGTK" class="completedtask">
                         <h4 class="tasktitle">Check CO monitor (many expire ~ 5 yrs)</h4>
                         <div class="thingsicon"><a href="things:///show?id=XHxC7ztajCHDAosLttUGTK"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('XHxC7ztajCHDAosLttUGTK')">&#9432;</div>
@@ -2251,7 +2258,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="Vg9iSkkrBwSEhKHh1oLZW7" class="completedtask">
+                      <div id="task_Vg9iSkkrBwSEhKHh1oLZW7" class="completedtask">
                         <h4 class="tasktitle">Check Fire Extinguishers</h4>
                         <div class="thingsicon"><a href="things:///show?id=Vg9iSkkrBwSEhKHh1oLZW7"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('Vg9iSkkrBwSEhKHh1oLZW7')">&#9432;</div>
@@ -2301,7 +2308,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="4xythCX6wHaPkjaNZBmNCD" class="completedtask">
+                      <div id="task_4xythCX6wHaPkjaNZBmNCD" class="completedtask">
                         <h4 class="tasktitle">Inspect entire engine exhaust system</h4>
                         <div class="thingsicon"><a href="things:///show?id=4xythCX6wHaPkjaNZBmNCD"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('4xythCX6wHaPkjaNZBmNCD')">&#9432;</div>
@@ -2352,7 +2359,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="Qr2Kp6qXti5KhgB1uZYR5j" class="completedtask">
+                      <div id="task_Qr2Kp6qXti5KhgB1uZYR5j" class="completedtask">
                         <h4 class="tasktitle">Remove life sling &amp; inspect</h4>
                         <div class="thingsicon"><a href="things:///show?id=Qr2Kp6qXti5KhgB1uZYR5j"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('Qr2Kp6qXti5KhgB1uZYR5j')">&#9432;</div>
@@ -2403,7 +2410,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="W5GmAtzbkiq1mh79E7o9Vn" class="completedtask">
+                      <div id="task_W5GmAtzbkiq1mh79E7o9Vn" class="completedtask">
                         <h4 class="tasktitle">Inspect Hull inlet &amp; shore cord</h4>
                         <div class="thingsicon"><a href="things:///show?id=W5GmAtzbkiq1mh79E7o9Vn"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('W5GmAtzbkiq1mh79E7o9Vn')">&#9432;</div>
@@ -2658,7 +2665,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="SJYk2ZQMgRba3JmTKQzjCD" class="completedtask">
+                      <div id="task_SJYk2ZQMgRba3JmTKQzjCD" class="completedtask">
                         <h4 class="tasktitle">Test the high water alarm</h4>
                         <div class="thingsicon"><a href="things:///show?id=SJYk2ZQMgRba3JmTKQzjCD"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('SJYk2ZQMgRba3JmTKQzjCD')">&#9432;</div>
@@ -2698,7 +2705,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="F9gxiPo5znbNp8eXFacj7s" class="completedtask">
+                      <div id="task_F9gxiPo5znbNp8eXFacj7s" class="completedtask">
                         <h4 class="tasktitle">Inspect/Clean &amp; wash bilge areas</h4>
                         <div class="thingsicon"><a href="things:///show?id=F9gxiPo5znbNp8eXFacj7s"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('F9gxiPo5znbNp8eXFacj7s')">&#9432;</div>
@@ -2748,7 +2755,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="U7JZQfeeDdzyyhAjuBB1mi" class="completedtask">
+                      <div id="task_U7JZQfeeDdzyyhAjuBB1mi" class="completedtask">
                         <h4 class="tasktitle">Ensure state registration/paperwork current</h4>
                         <div class="thingsicon"><a href="things:///show?id=U7JZQfeeDdzyyhAjuBB1mi"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('U7JZQfeeDdzyyhAjuBB1mi')">&#9432;</div>
@@ -2799,7 +2806,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="bNERkEyNpJ5hYcn5Cxpb9" class="completedtask">
+                      <div id="task_bNERkEyNpJ5hYcn5Cxpb9" class="completedtask">
                         <h4 class="tasktitle">Exercise sea-valves</h4>
                         <div class="thingsicon"><a href="things:///show?id=bNERkEyNpJ5hYcn5Cxpb9"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('bNERkEyNpJ5hYcn5Cxpb9')">&#9432;</div>
@@ -2849,7 +2856,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="FtgZgBQnFy46frMir7mrCK" class="completedtask">
+                      <div id="task_FtgZgBQnFy46frMir7mrCK" class="completedtask">
                         <h4 class="tasktitle">Update spare parts inventory</h4>
                         <div class="thingsicon"><a href="things:///show?id=FtgZgBQnFy46frMir7mrCK"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('FtgZgBQnFy46frMir7mrCK')">&#9432;</div>
@@ -3032,7 +3039,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="EZXH6E6Zd9zivBnA9vnJnC" class="completedtask">
+                      <div id="task_EZXH6E6Zd9zivBnA9vnJnC" class="completedtask">
                         <h4 class="tasktitle">Inspect clamps on hoses for corrosion, replace as needed. Also inspect for being too tight.</h4>
                         <div class="thingsicon"><a href="things:///show?id=EZXH6E6Zd9zivBnA9vnJnC"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('EZXH6E6Zd9zivBnA9vnJnC')">&#9432;</div>
@@ -3072,7 +3079,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="UVfzB5XxB1DUZMUaXmsyEh" class="completedtask">
+                      <div id="task_UVfzB5XxB1DUZMUaXmsyEh" class="completedtask">
                         <h4 class="tasktitle">Rub cloth over piping and hoses, odor means that it is no longer water tight and must be replaced. Check for any leaks.</h4>
                         <div class="thingsicon"><a href="things:///show?id=UVfzB5XxB1DUZMUaXmsyEh"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('UVfzB5XxB1DUZMUaXmsyEh')">&#9432;</div>
@@ -3112,7 +3119,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="85bbhxJZLqvfeP5E1Kq7rk" class="completedtask">
+                      <div id="task_85bbhxJZLqvfeP5E1Kq7rk" class="completedtask">
                         <h4 class="tasktitle">Lubricate threads of black tank drain plug on the deck</h4>
                         <div class="thingsicon"><a href="things:///show?id=85bbhxJZLqvfeP5E1Kq7rk"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('85bbhxJZLqvfeP5E1Kq7rk')">&#9432;</div>
@@ -3152,7 +3159,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="3DM8aDGtdV2uJfpBpfF9RL" class="completedtask">
+                      <div id="task_3DM8aDGtdV2uJfpBpfF9RL" class="completedtask">
                         <h4 class="tasktitle">Check black water tank ventilation ducts</h4>
                         <div class="thingsicon"><a href="things:///show?id=3DM8aDGtdV2uJfpBpfF9RL"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('3DM8aDGtdV2uJfpBpfF9RL')">&#9432;</div>
@@ -3192,7 +3199,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="YBBKQ1WmF57VWiJuvihJ88" class="completedtask">
+                      <div id="task_YBBKQ1WmF57VWiJuvihJ88" class="completedtask">
                         <h4 class="tasktitle">Replace black water ventilation filters </h4>
                         <div class="thingsicon"><a href="things:///show?id=YBBKQ1WmF57VWiJuvihJ88"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('YBBKQ1WmF57VWiJuvihJ88')">&#9432;</div>
@@ -3305,7 +3312,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="AbhpaLXUUeHCiuZ4WwxZ7D" class="completedtask">
+                      <div id="task_AbhpaLXUUeHCiuZ4WwxZ7D" class="completedtask">
                         <h4 class="tasktitle">Inspect all components</h4>
                         <div class="thingsicon"><a href="things:///show?id=AbhpaLXUUeHCiuZ4WwxZ7D"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('AbhpaLXUUeHCiuZ4WwxZ7D')">&#9432;</div>
@@ -3345,8 +3352,8 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="CdoVJJ4YwzmVFf2dedEeRs" class="completedtask">
-                        <h4 class="tasktitle">Check hydraulic steering oil level </h4>
+                      <div id="task_CdoVJJ4YwzmVFf2dedEeRs" class="completedtask">
+                        <h4 class="tasktitle">Check hydraulic steering oil level <span class="seenotesbutton" onclick="toggleTaskNotes('CdoVJJ4YwzmVFf2dedEeRs')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=CdoVJJ4YwzmVFf2dedEeRs"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('CdoVJJ4YwzmVFf2dedEeRs')">&#9432;</div>
                         <div class="tasknotes"><p>From page 176 of Azimut Owner’s Manual:</p>
@@ -3571,7 +3578,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="PzgBAxF3B138gTPoveimKw" class="completedtask">
+                      <div id="task_PzgBAxF3B138gTPoveimKw" class="completedtask">
                         <h4 class="tasktitle">Anodes</h4>
                         <div class="thingsicon"><a href="things:///show?id=PzgBAxF3B138gTPoveimKw"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('PzgBAxF3B138gTPoveimKw')">&#9432;</div>
@@ -3611,7 +3618,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="FXvressjdxGoTUMzXuHozm" class="completedtask">
+                      <div id="task_FXvressjdxGoTUMzXuHozm" class="completedtask">
                         <h4 class="tasktitle">Check and clean mileage transducer </h4>
                         <div class="thingsicon"><a href="things:///show?id=FXvressjdxGoTUMzXuHozm"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('FXvressjdxGoTUMzXuHozm')">&#9432;</div>
@@ -3651,7 +3658,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="GjMfin9P3fjmU9V9WXuVLn" class="completedtask">
+                      <div id="task_GjMfin9P3fjmU9V9WXuVLn" class="completedtask">
                         <h4 class="tasktitle">Lubricate thru-hull outlets</h4>
                         <div class="thingsicon"><a href="things:///show?id=GjMfin9P3fjmU9V9WXuVLn"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('GjMfin9P3fjmU9V9WXuVLn')">&#9432;</div>
@@ -3923,7 +3930,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="KzLELFsPGABFZdS6rMfvqi" class="completedtask">
+                      <div id="task_KzLELFsPGABFZdS6rMfvqi" class="completedtask">
                         <h4 class="tasktitle">Remove all chain/rode onto dock, inspect</h4>
                         <div class="thingsicon"><a href="things:///show?id=KzLELFsPGABFZdS6rMfvqi"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('KzLELFsPGABFZdS6rMfvqi')">&#9432;</div>
@@ -3963,7 +3970,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="WGMDvXbDyeHBWwD96CGZQA" class="completedtask">
+                      <div id="task_WGMDvXbDyeHBWwD96CGZQA" class="completedtask">
                         <h4 class="tasktitle">Inspect rode connections</h4>
                         <div class="thingsicon"><a href="things:///show?id=WGMDvXbDyeHBWwD96CGZQA"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('WGMDvXbDyeHBWwD96CGZQA')">&#9432;</div>
@@ -4003,7 +4010,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="AexpGFTMwSvqjH1CkbBujf" class="completedtask">
+                      <div id="task_AexpGFTMwSvqjH1CkbBujf" class="completedtask">
                         <h4 class="tasktitle">Clean anchor locker</h4>
                         <div class="thingsicon"><a href="things:///show?id=AexpGFTMwSvqjH1CkbBujf"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('AexpGFTMwSvqjH1CkbBujf')">&#9432;</div>
@@ -4043,7 +4050,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="7yp7AXaXwbiuaRV4tHN2Lx" class="completedtask">
+                      <div id="task_7yp7AXaXwbiuaRV4tHN2Lx" class="completedtask">
                         <h4 class="tasktitle">Take windlass apart, clean, &amp; Service</h4>
                         <div class="thingsicon"><a href="things:///show?id=7yp7AXaXwbiuaRV4tHN2Lx"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('7yp7AXaXwbiuaRV4tHN2Lx')">&#9432;</div>
@@ -4326,8 +4333,8 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="PZpRKH1yJxohdNGgHEdDjE" class="completedtask">
-                        <h4 class="tasktitle">Electrical inspections</h4>
+                      <div id="task_PZpRKH1yJxohdNGgHEdDjE" class="completedtask">
+                        <h4 class="tasktitle">Electrical inspections<span class="seenotesbutton" onclick="toggleTaskNotes('PZpRKH1yJxohdNGgHEdDjE')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=PZpRKH1yJxohdNGgHEdDjE"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('PZpRKH1yJxohdNGgHEdDjE')">&#9432;</div>
                         <div class="tasknotes"><ol>
@@ -4384,8 +4391,8 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="T2Z5fxSQhcVdasTuirxHAr" class="completedtask">
-                        <h4 class="tasktitle">Open all battery boxes &amp; inspect</h4>
+                      <div id="task_T2Z5fxSQhcVdasTuirxHAr" class="completedtask">
+                        <h4 class="tasktitle">Open all battery boxes &amp; inspect<span class="seenotesbutton" onclick="toggleTaskNotes('T2Z5fxSQhcVdasTuirxHAr')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=T2Z5fxSQhcVdasTuirxHAr"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('T2Z5fxSQhcVdasTuirxHAr')">&#9432;</div>
                         <div class="tasknotes"><p>Check the batteries, checking in particular for the presence of any oxidation on the terminals and acid on the battery body.</p>
@@ -4437,7 +4444,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="XNLbNmYo3nLbpXnFaoZ5wh" class="completedtask">
+                      <div id="task_XNLbNmYo3nLbpXnFaoZ5wh" class="completedtask">
                         <h4 class="tasktitle">Load Test house battery bank, record capacity</h4>
                         <div class="thingsicon"><a href="things:///show?id=XNLbNmYo3nLbpXnFaoZ5wh"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('XNLbNmYo3nLbpXnFaoZ5wh')">&#9432;</div>
@@ -4477,7 +4484,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="MwKbENyM5RhH8f2qkVy12F" class="completedtask">
+                      <div id="task_MwKbENyM5RhH8f2qkVy12F" class="completedtask">
                         <h4 class="tasktitle">Test Thrusters/other batteries</h4>
                         <div class="thingsicon"><a href="things:///show?id=MwKbENyM5RhH8f2qkVy12F"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('MwKbENyM5RhH8f2qkVy12F')">&#9432;</div>
@@ -4517,7 +4524,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="UGhp2cu3aPKLV6eb5F7xpx" class="completedtask">
+                      <div id="task_UGhp2cu3aPKLV6eb5F7xpx" class="completedtask">
                         <h4 class="tasktitle">Test Engine starter battery</h4>
                         <div class="thingsicon"><a href="things:///show?id=UGhp2cu3aPKLV6eb5F7xpx"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('UGhp2cu3aPKLV6eb5F7xpx')">&#9432;</div>
@@ -5258,8 +5265,8 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="36yutzBspu7D4Q7sY1ap2a" class="completedtask">
-                        <h4 class="tasktitle">Update hours</h4>
+                      <div id="task_36yutzBspu7D4Q7sY1ap2a" class="completedtask">
+                        <h4 class="tasktitle">Update hours<span class="seenotesbutton" onclick="toggleTaskNotes('36yutzBspu7D4Q7sY1ap2a')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=36yutzBspu7D4Q7sY1ap2a"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('36yutzBspu7D4Q7sY1ap2a')">&#9432;</div>
                         <div class="tasknotes"><table>
@@ -5324,7 +5331,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="LN467PdCGc4QjFDXN5Hf3S" class="completedtask">
+                      <div id="task_LN467PdCGc4QjFDXN5Hf3S" class="completedtask">
                         <h4 class="tasktitle">Test Alternator Output</h4>
                         <div class="thingsicon"><a href="things:///show?id=LN467PdCGc4QjFDXN5Hf3S"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('LN467PdCGc4QjFDXN5Hf3S')">&#9432;</div>
@@ -5364,7 +5371,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="QVivEzm9obMuH1fzceBgJu" class="completedtask">
+                      <div id="task_QVivEzm9obMuH1fzceBgJu" class="completedtask">
                         <h4 class="tasktitle">Anodes Sacrificial Zincs</h4>
                         <div class="thingsicon"><a href="things:///show?id=QVivEzm9obMuH1fzceBgJu"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('QVivEzm9obMuH1fzceBgJu')">&#9432;</div>
@@ -5404,7 +5411,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="VT7q2UznTH8FSMEMFfQrMz" class="completedtask">
+                      <div id="task_VT7q2UznTH8FSMEMFfQrMz" class="completedtask">
                         <h4 class="tasktitle">Cooling System maintenance</h4>
                         <div class="thingsicon"><a href="things:///show?id=VT7q2UznTH8FSMEMFfQrMz"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('VT7q2UznTH8FSMEMFfQrMz')">&#9432;</div>
@@ -5444,7 +5451,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="8zorDNGiZ1ubkMzaghpGEu" class="completedtask">
+                      <div id="task_8zorDNGiZ1ubkMzaghpGEu" class="completedtask">
                         <h4 class="tasktitle">Transmission Oil change</h4>
                         <div class="thingsicon"><a href="things:///show?id=8zorDNGiZ1ubkMzaghpGEu"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('8zorDNGiZ1ubkMzaghpGEu')">&#9432;</div>
@@ -5484,7 +5491,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="3wzMWxcNoyzfCgZqBhbKu2" class="completedtask">
+                      <div id="task_3wzMWxcNoyzfCgZqBhbKu2" class="completedtask">
                         <h4 class="tasktitle">Oil change</h4>
                         <div class="thingsicon"><a href="things:///show?id=3wzMWxcNoyzfCgZqBhbKu2"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('3wzMWxcNoyzfCgZqBhbKu2')">&#9432;</div>
@@ -5524,7 +5531,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="Uxb3evp8zW8zKbNffBDtX7" class="completedtask">
+                      <div id="task_Uxb3evp8zW8zKbNffBDtX7" class="completedtask">
                         <h4 class="tasktitle">Change Primary Fuel filters</h4>
                         <div class="thingsicon"><a href="things:///show?id=Uxb3evp8zW8zKbNffBDtX7"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('Uxb3evp8zW8zKbNffBDtX7')">&#9432;</div>
@@ -5564,7 +5571,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="3BNQWkvJLLKJq15boPLZwu" class="completedtask">
+                      <div id="task_3BNQWkvJLLKJq15boPLZwu" class="completedtask">
                         <h4 class="tasktitle">Change Secondary Fuel Filters</h4>
                         <div class="thingsicon"><a href="things:///show?id=3BNQWkvJLLKJq15boPLZwu"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('3BNQWkvJLLKJq15boPLZwu')">&#9432;</div>
@@ -5604,7 +5611,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="5o5kCD3WfTNr5WudDK5Dve" class="completedtask">
+                      <div id="task_5o5kCD3WfTNr5WudDK5Dve" class="completedtask">
                         <h4 class="tasktitle">Check clamps for corrosion and over-tightening</h4>
                         <div class="thingsicon"><a href="things:///show?id=5o5kCD3WfTNr5WudDK5Dve"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('5o5kCD3WfTNr5WudDK5Dve')">&#9432;</div>
@@ -5654,7 +5661,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="bMLeBSVQzdbAVs6wccUpz" class="completedtask">
+                      <div id="task_bMLeBSVQzdbAVs6wccUpz" class="completedtask">
                         <h4 class="tasktitle">Check engine antifreeze level</h4>
                         <div class="thingsicon"><a href="things:///show?id=bMLeBSVQzdbAVs6wccUpz"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('bMLeBSVQzdbAVs6wccUpz')">&#9432;</div>
@@ -5704,7 +5711,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="RRsrvvMxAdtKQnjRZmdWF6" class="completedtask">
+                      <div id="task_RRsrvvMxAdtKQnjRZmdWF6" class="completedtask">
                         <h4 class="tasktitle">Clean engine with degreaser</h4>
                         <div class="thingsicon"><a href="things:///show?id=RRsrvvMxAdtKQnjRZmdWF6"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('RRsrvvMxAdtKQnjRZmdWF6')">&#9432;</div>
@@ -5754,7 +5761,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="6TZCEGeiY4XTGa4eAHPTE7" class="completedtask">
+                      <div id="task_6TZCEGeiY4XTGa4eAHPTE7" class="completedtask">
                         <h4 class="tasktitle">Check bolts, screws, clamps, &amp; engine fittings</h4>
                         <div class="thingsicon"><a href="things:///show?id=6TZCEGeiY4XTGa4eAHPTE7"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('6TZCEGeiY4XTGa4eAHPTE7')">&#9432;</div>
@@ -5804,7 +5811,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="4iegFTM8ptyRsxvZJ2VMjc" class="completedtask">
+                      <div id="task_4iegFTM8ptyRsxvZJ2VMjc" class="completedtask">
                         <h4 class="tasktitle">Inspect exterior of fuel tanks</h4>
                         <div class="thingsicon"><a href="things:///show?id=4iegFTM8ptyRsxvZJ2VMjc"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('4iegFTM8ptyRsxvZJ2VMjc')">&#9432;</div>
@@ -5854,7 +5861,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="HS6GhwCH3bYz3oqefjYgTF" class="completedtask">
+                      <div id="task_HS6GhwCH3bYz3oqefjYgTF" class="completedtask">
                         <h4 class="tasktitle">Clean engine room ventilation filters</h4>
                         <div class="thingsicon"><a href="things:///show?id=HS6GhwCH3bYz3oqefjYgTF"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('HS6GhwCH3bYz3oqefjYgTF')">&#9432;</div>
@@ -5904,8 +5911,8 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="4S29bHfEzCPXQDQDTGpY6G" class="completedtask">
-                        <h4 class="tasktitle">Battery 6-month inspection</h4>
+                      <div id="task_4S29bHfEzCPXQDQDTGpY6G" class="completedtask">
+                        <h4 class="tasktitle">Battery 6-month inspection<span class="seenotesbutton" onclick="toggleTaskNotes('4S29bHfEzCPXQDQDTGpY6G')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=4S29bHfEzCPXQDQDTGpY6G"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('4S29bHfEzCPXQDQDTGpY6G')">&#9432;</div>
                         <div class="tasknotes"><p>Manual: <a href="http://fiamm-accumulator.ru/design/Manual_AGM_ENG.pdf">http://fiamm-accumulator.ru/design/Manual_AGM_ENG.pdf</a></p>
@@ -5955,7 +5962,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="FUe6XAJe393zYxyAFVY66Y" class="completedtask">
+                      <div id="task_FUe6XAJe393zYxyAFVY66Y" class="completedtask">
                         <h4 class="tasktitle">Clean fuel tanks</h4>
                         <div class="thingsicon"><a href="things:///show?id=FUe6XAJe393zYxyAFVY66Y"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('FUe6XAJe393zYxyAFVY66Y')">&#9432;</div>
@@ -5995,7 +6002,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="2uitPQRS8om36kqGs3Qh7T" class="completedtask">
+                      <div id="task_2uitPQRS8om36kqGs3Qh7T" class="completedtask">
                         <h4 class="tasktitle">Inspect inside fuel tanks</h4>
                         <div class="thingsicon"><a href="things:///show?id=2uitPQRS8om36kqGs3Qh7T"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('2uitPQRS8om36kqGs3Qh7T')">&#9432;</div>
@@ -6946,8 +6953,8 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="EVr42PPhi3oaHD9hyR5ahY" class="completedtask">
-                        <h4 class="tasktitle">Replace fuel filter (every 250 hours or 3 months)</h4>
+                      <div id="task_EVr42PPhi3oaHD9hyR5ahY" class="completedtask">
+                        <h4 class="tasktitle">Replace fuel filter (every 250 hours or 3 months)<span class="seenotesbutton" onclick="toggleTaskNotes('EVr42PPhi3oaHD9hyR5ahY')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=EVr42PPhi3oaHD9hyR5ahY"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('EVr42PPhi3oaHD9hyR5ahY')">&#9432;</div>
                         <div class="tasknotes"><ol>
@@ -7019,8 +7026,8 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="RVUu6iqsC6Ty7W3AaHr8RM" class="completedtask">
-                        <h4 class="tasktitle">Check the heat exchanger anticorrosion zinc anode (every 250 hours or 3 months)</h4>
+                      <div id="task_RVUu6iqsC6Ty7W3AaHr8RM" class="completedtask">
+                        <h4 class="tasktitle">Check the heat exchanger anticorrosion zinc anode (every 250 hours or 3 months)<span class="seenotesbutton" onclick="toggleTaskNotes('RVUu6iqsC6Ty7W3AaHr8RM')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=RVUu6iqsC6Ty7W3AaHr8RM"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('RVUu6iqsC6Ty7W3AaHr8RM')">&#9432;</div>
                         <div class="tasknotes"><ol>
@@ -7073,8 +7080,8 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="QRYSc6aFAfk99xTC79Wadw" class="completedtask">
-                        <h4 class="tasktitle">Clean the heat exchanger tube (every 500 hours or 6 months)</h4>
+                      <div id="task_QRYSc6aFAfk99xTC79Wadw" class="completedtask">
+                        <h4 class="tasktitle">Clean the heat exchanger tube (every 500 hours or 6 months)<span class="seenotesbutton" onclick="toggleTaskNotes('QRYSc6aFAfk99xTC79Wadw')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=QRYSc6aFAfk99xTC79Wadw"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('QRYSc6aFAfk99xTC79Wadw')">&#9432;</div>
                         <div class="tasknotes"><p><a href="https://www.icloud.com/iclouddrive/0cbK414tgISyYjqSsh0bkXzuA#ekozd_series">Kohler Service Manual TP-6953</a>,  p. 105-108</p>
@@ -7114,7 +7121,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="D6HzE3f7PUGsx7Wr9JmMcy" class="completedtask">
+                      <div id="task_D6HzE3f7PUGsx7Wr9JmMcy" class="completedtask">
                         <h4 class="tasktitle">Generator: Check and tighten the electrical connections (every 50 hours or 1 month)</h4>
                         <div class="thingsicon"><a href="things:///show?id=D6HzE3f7PUGsx7Wr9JmMcy"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('D6HzE3f7PUGsx7Wr9JmMcy')">&#9432;</div>
@@ -7164,7 +7171,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="MNtpefJ6EKJWgZhgQxFcUn" class="completedtask">
+                      <div id="task_MNtpefJ6EKJWgZhgQxFcUn" class="completedtask">
                         <h4 class="tasktitle">Generator: Check the seawater pump belt tension (every 250 hours or 3 months)</h4>
                         <div class="thingsicon"><a href="things:///show?id=MNtpefJ6EKJWgZhgQxFcUn"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('MNtpefJ6EKJWgZhgQxFcUn')">&#9432;</div>
@@ -7214,7 +7221,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="AFbtsiCRV6qgd8P46wwiRk" class="completedtask">
+                      <div id="task_AFbtsiCRV6qgd8P46wwiRk" class="completedtask">
                         <h4 class="tasktitle">Generator: Check the function of the siphon break (every 250 hours or 3 months)</h4>
                         <div class="thingsicon"><a href="things:///show?id=AFbtsiCRV6qgd8P46wwiRk"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('AFbtsiCRV6qgd8P46wwiRk')">&#9432;</div>
@@ -7264,7 +7271,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="WTPdQJFvKy1ejHGaWzRdZq" class="completedtask">
+                      <div id="task_WTPdQJFvKy1ejHGaWzRdZq" class="completedtask">
                         <h4 class="tasktitle">Generator: Check the seawater pump impeller (every 250 hours or 3 months)</h4>
                         <div class="thingsicon"><a href="things:///show?id=WTPdQJFvKy1ejHGaWzRdZq"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('WTPdQJFvKy1ejHGaWzRdZq')">&#9432;</div>
@@ -7314,7 +7321,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="WSkXdhErD1XBkqbfXoqkiV" class="completedtask">
+                      <div id="task_WSkXdhErD1XBkqbfXoqkiV" class="completedtask">
                         <h4 class="tasktitle">Generator: Check the coolant hoses (every 250 hours or 3 months)</h4>
                         <div class="thingsicon"><a href="things:///show?id=WSkXdhErD1XBkqbfXoqkiV"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('WSkXdhErD1XBkqbfXoqkiV')">&#9432;</div>
@@ -7364,7 +7371,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="UXtfiEyk5jjeBUfnLcmXwK" class="completedtask">
+                      <div id="task_UXtfiEyk5jjeBUfnLcmXwK" class="completedtask">
                         <h4 class="tasktitle">Inspect the exhaust system components</h4>
                         <div class="thingsicon"><a href="things:///show?id=UXtfiEyk5jjeBUfnLcmXwK"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('UXtfiEyk5jjeBUfnLcmXwK')">&#9432;</div>
@@ -7414,7 +7421,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="7QQKFNYsNHGBC5ZHf99SsV" class="completedtask">
+                      <div id="task_7QQKFNYsNHGBC5ZHf99SsV" class="completedtask">
                         <h4 class="tasktitle">Check the exhaust gas condition. If the exhaust is blue or black, contact your local distributor/dealer</h4>
                         <div class="thingsicon"><a href="things:///show?id=7QQKFNYsNHGBC5ZHf99SsV"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('7QQKFNYsNHGBC5ZHf99SsV')">&#9432;</div>
@@ -7464,7 +7471,7 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="2sUYnsNPYQmRjMgUCUXDLS" class="completedtask">
+                      <div id="task_2sUYnsNPYQmRjMgUCUXDLS" class="completedtask">
                         <h4 class="tasktitle">Generator: Fuel/water separator draining (every 500 hours or 6 months)</h4>
                         <div class="thingsicon"><a href="things:///show?id=2sUYnsNPYQmRjMgUCUXDLS"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('2sUYnsNPYQmRjMgUCUXDLS')">&#9432;</div>
@@ -7514,8 +7521,8 @@ To avoid this phenomenon, smear the terminals, possibly also the negative termin
                       </div>
                     </td>
                     <td>
-                      <div id="ENiu52B46xUeTtVVxVANUY" class="completedtask">
-                        <h4 class="tasktitle">Generator: Replace the oil in the crankcase &amp; replace filter (every 500 hours or 6 months)</h4>
+                      <div id="task_ENiu52B46xUeTtVVxVANUY" class="completedtask">
+                        <h4 class="tasktitle">Generator: Replace the oil in the crankcase &amp; replace filter (every 500 hours or 6 months)<span class="seenotesbutton" onclick="toggleTaskNotes('ENiu52B46xUeTtVVxVANUY')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=ENiu52B46xUeTtVVxVANUY"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('ENiu52B46xUeTtVVxVANUY')">&#9432;</div>
                         <div class="tasknotes"><h1>Oil Specifications</h1>
@@ -7596,7 +7603,7 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="Gxr6ZbytB26dc4fv8M2swn" class="completedtask">
+                      <div id="task_Gxr6ZbytB26dc4fv8M2swn" class="completedtask">
                         <h4 class="tasktitle">Generator: Replace the coolant (every 500 hours or 6 months)</h4>
                         <div class="thingsicon"><a href="things:///show?id=Gxr6ZbytB26dc4fv8M2swn"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('Gxr6ZbytB26dc4fv8M2swn')">&#9432;</div>
@@ -7646,7 +7653,7 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="4Bj9bW5cU5EKtocWxUAF12" class="completedtask">
+                      <div id="task_4Bj9bW5cU5EKtocWxUAF12" class="completedtask">
                         <h4 class="tasktitle">Generator: Check the mounting bolts/vibromounts and tighten if necessary (every 500 hours or 6 months)</h4>
                         <div class="thingsicon"><a href="things:///show?id=4Bj9bW5cU5EKtocWxUAF12"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('4Bj9bW5cU5EKtocWxUAF12')">&#9432;</div>
@@ -7696,7 +7703,7 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="EjGGiPHZ12z8v8DiYo5rRx" class="completedtask">
+                      <div id="task_EjGGiPHZ12z8v8DiYo5rRx" class="completedtask">
                         <h4 class="tasktitle">Generator: Check the breather pipe for obstructions (every 500 hours or 6 months)</h4>
                         <div class="thingsicon"><a href="things:///show?id=EjGGiPHZ12z8v8DiYo5rRx"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('EjGGiPHZ12z8v8DiYo5rRx')">&#9432;</div>
@@ -7746,7 +7753,7 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="9CVo2n6ZnbhvgAWb7BWKME" class="completedtask">
+                      <div id="task_9CVo2n6ZnbhvgAWb7BWKME" class="completedtask">
                         <h4 class="tasktitle">Check the starter motor (every 5000 hours)</h4>
                         <div class="thingsicon"><a href="things:///show?id=9CVo2n6ZnbhvgAWb7BWKME"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('9CVo2n6ZnbhvgAWb7BWKME')">&#9432;</div>
@@ -7786,7 +7793,7 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="NeNAn7DULDkprYVhFAtXLP" class="completedtask">
+                      <div id="task_NeNAn7DULDkprYVhFAtXLP" class="completedtask">
                         <h4 class="tasktitle">Generator: Inspect, clean and test the fuel injectors (every 1000 hours of yearly)</h4>
                         <div class="thingsicon"><a href="things:///show?id=NeNAn7DULDkprYVhFAtXLP"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('NeNAn7DULDkprYVhFAtXLP')">&#9432;</div>
@@ -7837,7 +7844,7 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="QF8xLoHD9RhhYUKvgK9F2q" class="completedtask">
+                      <div id="task_QF8xLoHD9RhhYUKvgK9F2q" class="completedtask">
                         <h4 class="tasktitle">Generator: Inspect the fuel injection nozzle pressure (every 1000 hours of yearly)</h4>
                         <div class="thingsicon"><a href="things:///show?id=QF8xLoHD9RhhYUKvgK9F2q"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('QF8xLoHD9RhhYUKvgK9F2q')">&#9432;</div>
@@ -7888,7 +7895,7 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="HoUeETwY7ghiZmNAtxYh82" class="completedtask">
+                      <div id="task_HoUeETwY7ghiZmNAtxYh82" class="completedtask">
                         <h4 class="tasktitle">Generator: Replace the seawater pump impeller (every 1000 hours or yearly)</h4>
                         <div class="thingsicon"><a href="things:///show?id=HoUeETwY7ghiZmNAtxYh82"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('HoUeETwY7ghiZmNAtxYh82')">&#9432;</div>
@@ -7939,7 +7946,7 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="WCSFEjfCR4xzbjegKRB7zV" class="completedtask">
+                      <div id="task_WCSFEjfCR4xzbjegKRB7zV" class="completedtask">
                         <h4 class="tasktitle">Generator: Replace the heat exchanger anticorrosion zinc anode (every 1000 hours or yearly)</h4>
                         <div class="thingsicon"><a href="things:///show?id=WCSFEjfCR4xzbjegKRB7zV"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('WCSFEjfCR4xzbjegKRB7zV')">&#9432;</div>
@@ -7990,7 +7997,7 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="6M5acgyYjbJcxUDVNBZNAb" class="completedtask">
+                      <div id="task_6M5acgyYjbJcxUDVNBZNAb" class="completedtask">
                         <h4 class="tasktitle">Generator: Replace the coolant hoses (every 1000 hours or yearly)</h4>
                         <div class="thingsicon"><a href="things:///show?id=6M5acgyYjbJcxUDVNBZNAb"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('6M5acgyYjbJcxUDVNBZNAb')">&#9432;</div>
@@ -8041,7 +8048,7 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="PBkXgomqUmqQCJzHEKiydY" class="completedtask">
+                      <div id="task_PBkXgomqUmqQCJzHEKiydY" class="completedtask">
                         <h4 class="tasktitle">Generator: Clean the exhaust/water mixing elbow (every 1000 hours or yearly)</h4>
                         <div class="thingsicon"><a href="things:///show?id=PBkXgomqUmqQCJzHEKiydY"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('PBkXgomqUmqQCJzHEKiydY')">&#9432;</div>
@@ -8092,7 +8099,7 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="aBxhEvSWQUGBm3ex2rp4i" class="completedtask">
+                      <div id="task_aBxhEvSWQUGBm3ex2rp4i" class="completedtask">
                         <h4 class="tasktitle">Generator: Inspect the crankcase breather system (every 1500 hours or yearly)</h4>
                         <div class="thingsicon"><a href="things:///show?id=aBxhEvSWQUGBm3ex2rp4i"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('aBxhEvSWQUGBm3ex2rp4i')">&#9432;</div>
@@ -8143,7 +8150,7 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="QwY5NoLefkno2ywiHf57sb" class="completedtask">
+                      <div id="task_QwY5NoLefkno2ywiHf57sb" class="completedtask">
                         <h4 class="tasktitle">Generator: Inspect the complete exhaust system (every 1000 hours or yearly)</h4>
                         <div class="thingsicon"><a href="things:///show?id=QwY5NoLefkno2ywiHf57sb"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('QwY5NoLefkno2ywiHf57sb')">&#9432;</div>
@@ -8194,7 +8201,7 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="JjV2Y89j676QsvTh7ijnko" class="completedtask">
+                      <div id="task_JjV2Y89j676QsvTh7ijnko" class="completedtask">
                         <h4 class="tasktitle">Generator: Clean the battery cables (every 1000 hours or yearly)</h4>
                         <div class="thingsicon"><a href="things:///show?id=JjV2Y89j676QsvTh7ijnko"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('JjV2Y89j676QsvTh7ijnko')">&#9432;</div>
@@ -8245,7 +8252,7 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="AyLZh3LYzepLAPLysXKj1S" class="completedtask">
+                      <div id="task_AyLZh3LYzepLAPLysXKj1S" class="completedtask">
                         <h4 class="tasktitle">Generator: Adjust the intake/exhaust valve clearance (every 1,000 hours or yearly)</h4>
                         <div class="thingsicon"><a href="things:///show?id=AyLZh3LYzepLAPLysXKj1S"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('AyLZh3LYzepLAPLysXKj1S')">&#9432;</div>
@@ -8349,7 +8356,7 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="srAotFz2DemiB7DwU6U9t" class="completedtask">
+                      <div id="task_srAotFz2DemiB7DwU6U9t" class="completedtask">
                         <h4 class="tasktitle">Trim tabs oil tank level </h4>
                         <div class="thingsicon"><a href="things:///show?id=srAotFz2DemiB7DwU6U9t"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('srAotFz2DemiB7DwU6U9t')">&#9432;</div>
@@ -8541,14 +8548,14 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
 }</pre></div>
                 <table class="tasktable">
                 
-                  <tr class="completedtask soontask">
+                  <tr class="completedtask latetask">
                     <td>
                       <div class="date">
                         3/28/2023
                       </div>
                     </td>
                     <td>
-                      <div id="TKTPczisikYv5n1PBRfdVZ" class="completedtask">
+                      <div id="task_TKTPczisikYv5n1PBRfdVZ" class="completedtask">
                         <h4 class="tasktitle">Dust leather upholstery &amp; wipe down with a damp cloth</h4>
                         <div class="thingsicon"><a href="things:///show?id=TKTPczisikYv5n1PBRfdVZ"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('TKTPczisikYv5n1PBRfdVZ')">&#9432;</div>
@@ -8581,14 +8588,14 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                     </td>
                   </tr>
                   
-                  <tr class="completedtask soontask">
+                  <tr class="completedtask latetask">
                     <td>
                       <div class="date">
                         3/28/2023
                       </div>
                     </td>
                     <td>
-                      <div id="8nQCZmnJ23KgJH7VAv3Ad3" class="completedtask">
+                      <div id="task_8nQCZmnJ23KgJH7VAv3Ad3" class="completedtask">
                         <h4 class="tasktitle">Apply moisture barrier to leather upholstery </h4>
                         <div class="thingsicon"><a href="things:///show?id=8nQCZmnJ23KgJH7VAv3Ad3"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('8nQCZmnJ23KgJH7VAv3Ad3')">&#9432;</div>
@@ -8628,8 +8635,8 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="MZTmCPR7PHK8fQPdZTn5on" class="completedtask">
-                        <h4 class="tasktitle">Disinfect fresh water tank</h4>
+                      <div id="task_MZTmCPR7PHK8fQPdZTn5on" class="completedtask">
+                        <h4 class="tasktitle">Disinfect fresh water tank<span class="seenotesbutton" onclick="toggleTaskNotes('MZTmCPR7PHK8fQPdZTn5on')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=MZTmCPR7PHK8fQPdZTn5on"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('MZTmCPR7PHK8fQPdZTn5on')">&#9432;</div>
                         <div class="tasknotes"><p>Azimut’s recommendation (see below) for a disinfectant soluton using chlorinated bleach seems <em>very</em> high (128 fl oz per 100 gallons), which is 8 times higher than what <a href="https://waterandhealth.org/safe-drinking-water/how-to-disinfect-water-storage-tanks-using-chlorine-bleach/">The Water Quality &amp; Health Council recommends</a>, which is a much lower concentration (16 fl oz per 100 gallons) and that’s closer to other sources I’ve read about sanitizing RV fresh water tanks. Azimut’s procedure sounds good, at least. Perhaps this is a translation or metric- to-imperial conversion error on Azimut’s part?</p>
@@ -8931,7 +8938,7 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="JAqeNB1hhtnHF9S1vF7QF8" class="completedtask">
+                      <div id="task_JAqeNB1hhtnHF9S1vF7QF8" class="completedtask">
                         <h4 class="tasktitle">Check scuppers for blockage </h4>
                         <div class="thingsicon"><a href="things:///show?id=JAqeNB1hhtnHF9S1vF7QF8"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('JAqeNB1hhtnHF9S1vF7QF8')">&#9432;</div>
@@ -8971,8 +8978,8 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="TVwDyRVGu9BpXwHjTM122C" class="completedtask">
-                        <h4 class="tasktitle">Wash gel coat</h4>
+                      <div id="task_TVwDyRVGu9BpXwHjTM122C" class="completedtask">
+                        <h4 class="tasktitle">Wash gel coat<span class="seenotesbutton" onclick="toggleTaskNotes('TVwDyRVGu9BpXwHjTM122C')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=TVwDyRVGu9BpXwHjTM122C"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('TVwDyRVGu9BpXwHjTM122C')">&#9432;</div>
                         <div class="tasknotes"><p>Wash the gelcoat surfaces with non-abrasive equipment (non-scratch sponges, cotton or micro-fiber fabrics, medium/soft brushes) and a low alkaline detergent (to avoid degrading the layer of protective wax) that does not contain silicone or oils. During the summer months, it is advisable to wash down twice a month if the boat is used frequently. During the winter, maintenance may be reduced if the boat is hauled and covered.</p>
@@ -9012,8 +9019,8 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="CwQmqp7kD5Vs6PXMprx4GQ" class="completedtask">
-                        <h4 class="tasktitle">Clean windshield wipers and nozzles</h4>
+                      <div id="task_CwQmqp7kD5Vs6PXMprx4GQ" class="completedtask">
+                        <h4 class="tasktitle">Clean windshield wipers and nozzles<span class="seenotesbutton" onclick="toggleTaskNotes('CwQmqp7kD5Vs6PXMprx4GQ')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=CwQmqp7kD5Vs6PXMprx4GQ"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('CwQmqp7kD5Vs6PXMprx4GQ')">&#9432;</div>
                         <div class="tasknotes"><p>From page 183 of <a href="https://www.icloud.com/iclouddrive/0b6Eh8-ae5bGTzQgl0cV5pwYA">Azimut Owner’s Manual</a>:</p>
@@ -9057,7 +9064,7 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="VGv95SPrFgLtTQjNSzdGzW" class="completedtask">
+                      <div id="task_VGv95SPrFgLtTQjNSzdGzW" class="completedtask">
                         <h4 class="tasktitle">Apply coat of UV absorber protective polish or wax</h4>
                         <div class="thingsicon"><a href="things:///show?id=VGv95SPrFgLtTQjNSzdGzW"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('VGv95SPrFgLtTQjNSzdGzW')">&#9432;</div>
@@ -9097,8 +9104,8 @@ With Specifications: API CF, CI-4, CH-4, CG-4</p>
                       </div>
                     </td>
                     <td>
-                      <div id="8pKf7oxbG6h2FTn2kYHP1D" class="completedtask">
-                        <h4 class="tasktitle">Clean Teak Decks</h4>
+                      <div id="task_8pKf7oxbG6h2FTn2kYHP1D" class="completedtask">
+                        <h4 class="tasktitle">Clean Teak Decks<span class="seenotesbutton" onclick="toggleTaskNotes('8pKf7oxbG6h2FTn2kYHP1D')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=8pKf7oxbG6h2FTn2kYHP1D"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('8pKf7oxbG6h2FTn2kYHP1D')">&#9432;</div>
                         <div class="tasknotes"><h1>Kill Mold</h1>
@@ -9489,7 +9496,7 @@ The use of a powerful cleaner is not recommended as high pressure water jets may
                       </div>
                     </td>
                     <td>
-                      <div id="EdL4HQvLjs46ABwv3hwo77" class="completedtask">
+                      <div id="task_EdL4HQvLjs46ABwv3hwo77" class="completedtask">
                         <h4 class="tasktitle">Check that bolts are fastened securely</h4>
                         <div class="thingsicon"><a href="things:///show?id=EdL4HQvLjs46ABwv3hwo77"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('EdL4HQvLjs46ABwv3hwo77')">&#9432;</div>
@@ -9529,7 +9536,7 @@ The use of a powerful cleaner is not recommended as high pressure water jets may
                       </div>
                     </td>
                     <td>
-                      <div id="EAwekFhVze9KLBvEeGf4j9" class="completedtask">
+                      <div id="task_EAwekFhVze9KLBvEeGf4j9" class="completedtask">
                         <h4 class="tasktitle">Check that the thruster thru-hull is clean and dry</h4>
                         <div class="thingsicon"><a href="things:///show?id=EAwekFhVze9KLBvEeGf4j9"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('EAwekFhVze9KLBvEeGf4j9')">&#9432;</div>
@@ -9569,7 +9576,7 @@ The use of a powerful cleaner is not recommended as high pressure water jets may
                       </div>
                     </td>
                     <td>
-                      <div id="2SvFTDhg4jvoLFhsQ5Mzuk" class="completedtask">
+                      <div id="task_2SvFTDhg4jvoLFhsQ5Mzuk" class="completedtask">
                         <h4 class="tasktitle">Ensure batteries are in good condition. While running thruster, measure volt output is greater than 10.5v (or 12v motors) and 21v (for 24v motors).</h4>
                         <div class="thingsicon"><a href="things:///show?id=2SvFTDhg4jvoLFhsQ5Mzuk"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('2SvFTDhg4jvoLFhsQ5Mzuk')">&#9432;</div>
@@ -9609,7 +9616,7 @@ The use of a powerful cleaner is not recommended as high pressure water jets may
                       </div>
                     </td>
                     <td>
-                      <div id="HcxFoA31Gpsi5hFQJodxqS" class="completedtask">
+                      <div id="task_HcxFoA31Gpsi5hFQJodxqS" class="completedtask">
                         <h4 class="tasktitle">Change Thruster Gearbox Oil (EP90 oil)</h4>
                         <div class="thingsicon"><a href="things:///show?id=HcxFoA31Gpsi5hFQJodxqS"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('HcxFoA31Gpsi5hFQJodxqS')">&#9432;</div>
@@ -9649,7 +9656,7 @@ The use of a powerful cleaner is not recommended as high pressure water jets may
                       </div>
                     </td>
                     <td>
-                      <div id="GtZq4x3Xvg5NGZ8jfSSrE8" class="completedtask">
+                      <div id="task_GtZq4x3Xvg5NGZ8jfSSrE8" class="completedtask">
                         <h4 class="tasktitle">Check zinc anodes</h4>
                         <div class="thingsicon"><a href="things:///show?id=GtZq4x3Xvg5NGZ8jfSSrE8"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('GtZq4x3Xvg5NGZ8jfSSrE8')">&#9432;</div>
@@ -9689,7 +9696,7 @@ The use of a powerful cleaner is not recommended as high pressure water jets may
                       </div>
                     </td>
                     <td>
-                      <div id="7izSkFfpx22fDZQefpvbFQ" class="completedtask">
+                      <div id="task_7izSkFfpx22fDZQefpvbFQ" class="completedtask">
                         <h4 class="tasktitle">Inspect thrusters thru-hulls for leaks</h4>
                         <div class="thingsicon"><a href="things:///show?id=7izSkFfpx22fDZQefpvbFQ"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('7izSkFfpx22fDZQefpvbFQ')">&#9432;</div>

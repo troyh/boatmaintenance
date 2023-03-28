@@ -12,12 +12,18 @@
         var elem = document.querySelector("#"+id+" .jsondata");
         elem.style.display = elem.style.display !== 'block' ? 'block' : 'none';
       }
+      function toggleTaskNotes(id) {
+        console.log(id);
+        console.log("div#task_"+id+" .tasknotes");
+        var elem = document.querySelector("#task_"+id+" .tasknotes");
+        elem.style.display = elem.style.display !== 'block' ? 'block' : 'none';
+      }
     </script>
     <title>Williams 325 Maintenance</title>
   </head>
   <body>
     <div class="header">
-      <div>Mon Mar 27 2023 08:42:06 GMT-0700 (Pacific Daylight Time)</div>
+      <div>Tue Mar 28 2023 08:33:59 GMT-0700 (Pacific Daylight Time)</div>
     </div>
     <div id="nav"><a href="/boatmaintenance">Home</a></div>
     <div class="pagetitle">Williams 325 Maintenance</div>
@@ -446,7 +452,7 @@
               </td>
               <td>
                 <div id="task_YSLaAkUzsGbeCWJaEmxtFE">
-                  <h3>General &#9656; Update engine hours</h3>
+                  <h3>General &#9656; Update engine hours<span class="seenotesbutton" onclick="toggleTaskNotes('YSLaAkUzsGbeCWJaEmxtFE')">&#8226;&#8226;&#8226;</span></h3>
                   <div class="jsondata"><pre>{
   "uuid": "YSLaAkUzsGbeCWJaEmxtFE",
   "userModificationDate": "2023-03-08T04:47:26.541Z",
@@ -928,7 +934,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="E7QidA9NdCtmVQZp2unrMF" class="completedtask">
+                      <div id="task_E7QidA9NdCtmVQZp2unrMF" class="completedtask">
                         <h4 class="tasktitle">Bilge: Test bilge pump by raising sensor (to simulate water in bilge)</h4>
                         <div class="thingsicon"><a href="things:///show?id=E7QidA9NdCtmVQZp2unrMF"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('E7QidA9NdCtmVQZp2unrMF')">&#9432;</div>
@@ -978,7 +984,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="FgDx8RiAPYe3gZ4w8JLmWA" class="completedtask">
+                      <div id="task_FgDx8RiAPYe3gZ4w8JLmWA" class="completedtask">
                         <h4 class="tasktitle">Check Thru Hulls &amp; Clamps</h4>
                         <div class="thingsicon"><a href="things:///show?id=FgDx8RiAPYe3gZ4w8JLmWA"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('FgDx8RiAPYe3gZ4w8JLmWA')">&#9432;</div>
@@ -1028,7 +1034,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="KXRYHSS38jEbyrWxDMz8Xm" class="completedtask">
+                      <div id="task_KXRYHSS38jEbyrWxDMz8Xm" class="completedtask">
                         <h4 class="tasktitle">Bilge: Clean bilge</h4>
                         <div class="thingsicon"><a href="things:///show?id=KXRYHSS38jEbyrWxDMz8Xm"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('KXRYHSS38jEbyrWxDMz8Xm')">&#9432;</div>
@@ -1078,7 +1084,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="BrtBZfF6yVyeDibHVt8vDq" class="completedtask">
+                      <div id="task_BrtBZfF6yVyeDibHVt8vDq" class="completedtask">
                         <h4 class="tasktitle">Check Thru Hulls &amp; Clamps</h4>
                         <div class="thingsicon"><a href="things:///show?id=BrtBZfF6yVyeDibHVt8vDq"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('BrtBZfF6yVyeDibHVt8vDq')">&#9432;</div>
@@ -1279,7 +1285,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="9ZGfPubm1YS3EEabpkmLW9" class="completedtask">
+                      <div id="task_9ZGfPubm1YS3EEabpkmLW9" class="completedtask">
                         <h4 class="tasktitle">Charge battery for 3 hours </h4>
                         <div class="thingsicon"><a href="things:///show?id=9ZGfPubm1YS3EEabpkmLW9"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('9ZGfPubm1YS3EEabpkmLW9')">&#9432;</div>
@@ -1327,7 +1333,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="Raxg63Rq3y37jbG5yUFJEa" class="completedtask">
+                      <div id="task_Raxg63Rq3y37jbG5yUFJEa" class="completedtask">
                         <h4 class="tasktitle">Check battery charge level</h4>
                         <div class="thingsicon"><a href="things:///show?id=Raxg63Rq3y37jbG5yUFJEa"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('Raxg63Rq3y37jbG5yUFJEa')">&#9432;</div>
@@ -1377,7 +1383,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="28LUuMssYrXv7Yt2Beky9x" class="completedtask">
+                      <div id="task_28LUuMssYrXv7Yt2Beky9x" class="completedtask">
                         <h4 class="tasktitle">Batteries: Carefully clean the battery terminals and check electrolyte levels.</h4>
                         <div class="thingsicon"><a href="things:///show?id=28LUuMssYrXv7Yt2Beky9x"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('28LUuMssYrXv7Yt2Beky9x')">&#9432;</div>
@@ -1427,7 +1433,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="YWBoG2u21hgLc2hRz5t2NU" class="completedtask">
+                      <div id="task_YWBoG2u21hgLc2hRz5t2NU" class="completedtask">
                         <h4 class="tasktitle">Batteries: All electric contacts should be treated with a protective agent (CRC marine protector).</h4>
                         <div class="thingsicon"><a href="things:///show?id=YWBoG2u21hgLc2hRz5t2NU"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('YWBoG2u21hgLc2hRz5t2NU')">&#9432;</div>
@@ -1660,7 +1666,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="vBHfazDqcTpZG3p3MzFuK" class="completedtask">
+                      <div id="task_vBHfazDqcTpZG3p3MzFuK" class="completedtask">
                         <h4 class="tasktitle">Clean gauges with a damp cloth or with Invisible Glass (not Windex!)</h4>
                         <div class="thingsicon"><a href="things:///show?id=vBHfazDqcTpZG3p3MzFuK"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('vBHfazDqcTpZG3p3MzFuK')">&#9432;</div>
@@ -1710,7 +1716,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="3g5RDzeDHQwYDHnwbE41QC" class="completedtask">
+                      <div id="task_3g5RDzeDHQwYDHnwbE41QC" class="completedtask">
                         <h4 class="tasktitle">Clean drains (3)</h4>
                         <div class="thingsicon"><a href="things:///show?id=3g5RDzeDHQwYDHnwbE41QC"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('3g5RDzeDHQwYDHnwbE41QC')">&#9432;</div>
@@ -1760,8 +1766,8 @@
                       </div>
                     </td>
                     <td>
-                      <div id="ThaSbXF4HuUqeRLsxtpEYC" class="completedtask">
-                        <h4 class="tasktitle">Update engine hours</h4>
+                      <div id="task_ThaSbXF4HuUqeRLsxtpEYC" class="completedtask">
+                        <h4 class="tasktitle">Update engine hours<span class="seenotesbutton" onclick="toggleTaskNotes('ThaSbXF4HuUqeRLsxtpEYC')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=ThaSbXF4HuUqeRLsxtpEYC"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('ThaSbXF4HuUqeRLsxtpEYC')">&#9432;</div>
                         <div class="tasknotes"><p>Are any hour-based maintenance items due?</p>
@@ -1811,7 +1817,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="QDFzLdZ7ZanCjbNRqeZGjj" class="completedtask">
+                      <div id="task_QDFzLdZ7ZanCjbNRqeZGjj" class="completedtask">
                         <h4 class="tasktitle">Clean the mattress and cushion slipcovers, check the status of the mooring lines, fenders, safety equipment and verify the expirations of emergency flares and life-rafts.</h4>
                         <div class="thingsicon"><a href="things:///show?id=QDFzLdZ7ZanCjbNRqeZGjj"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('QDFzLdZ7ZanCjbNRqeZGjj')">&#9432;</div>
@@ -1861,7 +1867,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="Ei81yoY6VBXTvNg3BRUUj" class="completedtask">
+                      <div id="task_Ei81yoY6VBXTvNg3BRUUj" class="completedtask">
                         <h4 class="tasktitle">Hull: Inspect hull zinc anode</h4>
                         <div class="thingsicon"><a href="things:///show?id=Ei81yoY6VBXTvNg3BRUUj"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('Ei81yoY6VBXTvNg3BRUUj')">&#9432;</div>
@@ -2256,7 +2262,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="6rC9fryye2J1qtcG4cKgv1" class="completedtask">
+                      <div id="task_6rC9fryye2J1qtcG4cKgv1" class="completedtask">
                         <h4 class="tasktitle">Inspect fuel line: Visually inspect the fuel line for cracks, swelling, leaks, hardness, or other signs of deterioration or damage. If any of these conditions are found, the fuel line must be replaced.</h4>
                         <div class="thingsicon"><a href="things:///show?id=6rC9fryye2J1qtcG4cKgv1"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('6rC9fryye2J1qtcG4cKgv1')">&#9432;</div>
@@ -2306,7 +2312,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="BkiPJQBop2F68kMnrpEYa8" class="completedtask">
+                      <div id="task_BkiPJQBop2F68kMnrpEYa8" class="completedtask">
                         <h4 class="tasktitle">Clean air filter</h4>
                         <div class="thingsicon"><a href="things:///show?id=BkiPJQBop2F68kMnrpEYa8"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('BkiPJQBop2F68kMnrpEYa8')">&#9432;</div>
@@ -2356,7 +2362,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="4VvspwLNUVvJEhxj4WonvU" class="completedtask">
+                      <div id="task_4VvspwLNUVvJEhxj4WonvU" class="completedtask">
                         <h4 class="tasktitle">Flush the cooling system</h4>
                         <div class="thingsicon"><a href="things:///show?id=4VvspwLNUVvJEhxj4WonvU"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('4VvspwLNUVvJEhxj4WonvU')">&#9432;</div>
@@ -2406,7 +2412,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="XGFFGtqpyrJyeVachhas5n" class="completedtask">
+                      <div id="task_XGFFGtqpyrJyeVachhas5n" class="completedtask">
                         <h4 class="tasktitle">Check fuses</h4>
                         <div class="thingsicon"><a href="things:///show?id=XGFFGtqpyrJyeVachhas5n"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('XGFFGtqpyrJyeVachhas5n')">&#9432;</div>
@@ -2456,7 +2462,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="C1DZeYJr5ZxzFHmdTE2vij" class="completedtask">
+                      <div id="task_C1DZeYJr5ZxzFHmdTE2vij" class="completedtask">
                         <h4 class="tasktitle">Inspect anodes (5)</h4>
                         <div class="thingsicon"><a href="things:///show?id=C1DZeYJr5ZxzFHmdTE2vij"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('C1DZeYJr5ZxzFHmdTE2vij')">&#9432;</div>
@@ -2506,7 +2512,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="3o1zLjuk1VpHxzBxkKbmi2" class="completedtask">
+                      <div id="task_3o1zLjuk1VpHxzBxkKbmi2" class="completedtask">
                         <h4 class="tasktitle">100-hour service</h4>
                         <div class="thingsicon"><a href="things:///show?id=3o1zLjuk1VpHxzBxkKbmi2"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('3o1zLjuk1VpHxzBxkKbmi2')">&#9432;</div>
@@ -2546,7 +2552,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="QgruEvoUZgPc1KiBHCatM3" class="completedtask">
+                      <div id="task_QgruEvoUZgPc1KiBHCatM3" class="completedtask">
                         <h4 class="tasktitle">Replace inline fuel filter</h4>
                         <div class="thingsicon"><a href="things:///show?id=QgruEvoUZgPc1KiBHCatM3"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('QgruEvoUZgPc1KiBHCatM3')">&#9432;</div>
@@ -2597,7 +2603,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="95mzgkMx9tkR5AbpTiAtQd" class="completedtask">
+                      <div id="task_95mzgkMx9tkR5AbpTiAtQd" class="completedtask">
                         <h4 class="tasktitle">Replace water-separating fuel filter</h4>
                         <div class="thingsicon"><a href="things:///show?id=95mzgkMx9tkR5AbpTiAtQd"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('95mzgkMx9tkR5AbpTiAtQd')">&#9432;</div>
@@ -2648,7 +2654,7 @@
                       </div>
                     </td>
                     <td>
-                      <div id="LFPSSpZysSz2QVUfzpZqo2" class="completedtask">
+                      <div id="task_LFPSSpZysSz2QVUfzpZqo2" class="completedtask">
                         <h4 class="tasktitle">300-hour service</h4>
                         <div class="thingsicon"><a href="things:///show?id=LFPSSpZysSz2QVUfzpZqo2"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('LFPSSpZysSz2QVUfzpZqo2')">&#9432;</div>

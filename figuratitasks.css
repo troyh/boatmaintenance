@@ -153,6 +153,9 @@ tr.completedtask:hover {
 
 .tasknotes {
   display:none;
+  color:black;
+  padding:0.5em;
+  /* background-color: red; */
 }
 
 .completednotes {
@@ -164,7 +167,7 @@ tr.completedtask:hover {
 }
 
 .completedtask ol {
-  display:none;
+  display:block;
 }
 
 .tasknotes h1,
@@ -299,4 +302,25 @@ tr.project td a {
   /* opacity: 60%; */
   /* background-color: #fff; */
   /* z-index: 1000; */
+}
+
+.seenotesbutton {
+  color: white;
+  padding-top:2px;
+  background-color: #ddd;
+  font-size: 7pt;
+  height:11px;
+  width:22px;
+  border-radius: 30px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 3px 3px 0 3px;
+  /* display:block; */
+  position: absolute;
+  top: -1px;
+}
+
+.seenotesbutton:hover {
+  cursor: pointer; 
+  color:#000;
 }

@@ -12,12 +12,18 @@
         var elem = document.querySelector("#"+id+" .jsondata");
         elem.style.display = elem.style.display !== 'block' ? 'block' : 'none';
       }
+      function toggleTaskNotes(id) {
+        console.log(id);
+        console.log("div#task_"+id+" .tasknotes");
+        var elem = document.querySelector("#task_"+id+" .tasknotes");
+        elem.style.display = elem.style.display !== 'block' ? 'block' : 'none';
+      }
     </script>
     <title>Cranchi E26 Maintenance</title>
   </head>
   <body>
     <div class="header">
-      <div>Mon Mar 27 2023 08:42:06 GMT-0700 (Pacific Daylight Time)</div>
+      <div>Tue Mar 28 2023 08:33:59 GMT-0700 (Pacific Daylight Time)</div>
     </div>
     <div id="nav"><a href="/boatmaintenance">Home</a></div>
     <div class="pagetitle">Cranchi E26 Maintenance</div>
@@ -173,7 +179,7 @@ Engine oil capacity is approximately 7.0 L (7.4 US qt).</p>
               </td>
               <td>
                 <div id="task_PddAuiibw9wsGTAbTxk5F3">
-                  <h3>Inspect DTS wiring</h3>
+                  <h3>Inspect DTS wiring<span class="seenotesbutton" onclick="toggleTaskNotes('PddAuiibw9wsGTAbTxk5F3')">&#8226;&#8226;&#8226;</span></h3>
                   <div class="jsondata"><pre>{
   "uuid": "PddAuiibw9wsGTAbTxk5F3",
   "userModificationDate": "2023-03-22T05:33:13.893Z",
@@ -503,7 +509,7 @@ Engine oil capacity is approximately 7.0 L (7.4 US qt).</p>
               </td>
               <td>
                 <div id="task_3VNMwcsVdMCEYABFDyQ3zk">
-                  <h3>General &#9656; Check the status of anti-fouling paint on the bottom and submerged parts</h3>
+                  <h3>General &#9656; Check the status of anti-fouling paint on the bottom and submerged parts<span class="seenotesbutton" onclick="toggleTaskNotes('3VNMwcsVdMCEYABFDyQ3zk')">&#8226;&#8226;&#8226;</span></h3>
                   <div class="jsondata"><pre>{
   "uuid": "3VNMwcsVdMCEYABFDyQ3zk",
   "userModificationDate": "2023-03-15T15:14:58.339Z",
@@ -792,7 +798,7 @@ Engine oil capacity is approximately 7.0 L (7.4 US qt).</p>
               </td>
               <td>
                 <div id="task_QuaqafzuAD7ZtJvW2rccLt">
-                  <h3>General &#9656; Update engine hours</h3>
+                  <h3>General &#9656; Update engine hours<span class="seenotesbutton" onclick="toggleTaskNotes('QuaqafzuAD7ZtJvW2rccLt')">&#8226;&#8226;&#8226;</span></h3>
                   <div class="jsondata"><pre>{
   "uuid": "QuaqafzuAD7ZtJvW2rccLt",
   "userModificationDate": "2023-03-15T00:37:25.566Z",
@@ -1501,14 +1507,14 @@ Starboard: 13.22v</p>
 }</pre></div>
                 <table class="tasktable">
                 
-                  <tr class="completedtask soontask">
+                  <tr class="completedtask latetask">
                     <td>
                       <div class="date">
                         3/28/2023
                       </div>
                     </td>
                     <td>
-                      <div id="PjjnuFhyYt6cVArfbdtSu9" class="completedtask">
+                      <div id="task_PjjnuFhyYt6cVArfbdtSu9" class="completedtask">
                         <h4 class="tasktitle">Check zinc anodes</h4>
                         <div class="thingsicon"><a href="things:///show?id=PjjnuFhyYt6cVArfbdtSu9"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('PjjnuFhyYt6cVArfbdtSu9')">&#9432;</div>
@@ -1541,14 +1547,14 @@ Starboard: 13.22v</p>
                     </td>
                   </tr>
                   
-                  <tr class="completedtask soontask">
+                  <tr class="completedtask latetask">
                     <td>
                       <div class="date">
                         3/28/2023
                       </div>
                     </td>
                     <td>
-                      <div id="Sx2ntS97W4uNEjeinGofmr" class="completedtask">
+                      <div id="task_Sx2ntS97W4uNEjeinGofmr" class="completedtask">
                         <h4 class="tasktitle">Charge battery</h4>
                         <div class="thingsicon"><a href="things:///show?id=Sx2ntS97W4uNEjeinGofmr"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('Sx2ntS97W4uNEjeinGofmr')">&#9432;</div>
@@ -1581,14 +1587,14 @@ Starboard: 13.22v</p>
                     </td>
                   </tr>
                   
-                  <tr class="completedtask soontask">
+                  <tr class="completedtask latetask">
                     <td>
                       <div class="date">
                         3/28/2023
                       </div>
                     </td>
                     <td>
-                      <div id="HmCszBPPrEtoR1jHHt81vg" class="completedtask">
+                      <div id="task_HmCszBPPrEtoR1jHHt81vg" class="completedtask">
                         <h4 class="tasktitle">Check water cells in battery</h4>
                         <div class="thingsicon"><a href="things:///show?id=HmCszBPPrEtoR1jHHt81vg"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('HmCszBPPrEtoR1jHHt81vg')">&#9432;</div>
@@ -1621,15 +1627,15 @@ Starboard: 13.22v</p>
                     </td>
                   </tr>
                   
-                  <tr class="completedtask soontask">
+                  <tr class="completedtask latetask">
                     <td>
                       <div class="date">
                         3/28/2023
                       </div>
                     </td>
                     <td>
-                      <div id="5vAgK1v5d6Nsb5Pwc9Egtu" class="completedtask">
-                        <h4 class="tasktitle">Inspect lift</h4>
+                      <div id="task_5vAgK1v5d6Nsb5Pwc9Egtu" class="completedtask">
+                        <h4 class="tasktitle">Inspect lift<span class="seenotesbutton" onclick="toggleTaskNotes('5vAgK1v5d6Nsb5Pwc9Egtu')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=5vAgK1v5d6Nsb5Pwc9Egtu"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('5vAgK1v5d6Nsb5Pwc9Egtu')">&#9432;</div>
                         <div class="tasknotes"><p>Check bolts, pins, hydraulics, pump, electronics and structural welds</p>
@@ -1662,14 +1668,14 @@ Starboard: 13.22v</p>
                     </td>
                   </tr>
                   
-                  <tr class="completedtask soontask">
+                  <tr class="completedtask latetask">
                     <td>
                       <div class="date">
                         3/28/2023
                       </div>
                     </td>
                     <td>
-                      <div id="2P7uNo1FMUFdgWC8YNSF69" class="completedtask">
+                      <div id="task_2P7uNo1FMUFdgWC8YNSF69" class="completedtask">
                         <h4 class="tasktitle">Check hydraulic fluid</h4>
                         <div class="thingsicon"><a href="things:///show?id=2P7uNo1FMUFdgWC8YNSF69"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('2P7uNo1FMUFdgWC8YNSF69')">&#9432;</div>
@@ -1983,15 +1989,15 @@ Starboard: 13.22v</p>
 }</pre></div>
                 <table class="tasktable">
                 
-                  <tr class="completedtask soontask">
+                  <tr class="completedtask latetask">
                     <td>
                       <div class="date">
                         3/28/2023
                       </div>
                     </td>
                     <td>
-                      <div id="LKsGWfcWN52SpLkbk6GnvW" class="completedtask">
-                        <h4 class="tasktitle">Bilge: Test bilge pump</h4>
+                      <div id="task_LKsGWfcWN52SpLkbk6GnvW" class="completedtask">
+                        <h4 class="tasktitle">Bilge: Test bilge pump<span class="seenotesbutton" onclick="toggleTaskNotes('LKsGWfcWN52SpLkbk6GnvW')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=LKsGWfcWN52SpLkbk6GnvW"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('LKsGWfcWN52SpLkbk6GnvW')">&#9432;</div>
                         <div class="tasknotes"><p>Press 2 fingers on sensor to simulate water in bilge</p>
@@ -2024,15 +2030,15 @@ Starboard: 13.22v</p>
                     </td>
                   </tr>
                   
-                  <tr class="completedtask soontask">
+                  <tr class="completedtask latetask">
                     <td>
                       <div class="date">
                         3/28/2023
                       </div>
                     </td>
                     <td>
-                      <div id="G9iCBZhHf8HbJ325nXSUV3" class="completedtask">
-                        <h4 class="tasktitle">Inspect, clean/replace fresh water filter</h4>
+                      <div id="task_G9iCBZhHf8HbJ325nXSUV3" class="completedtask">
+                        <h4 class="tasktitle">Inspect, clean/replace fresh water filter<span class="seenotesbutton" onclick="toggleTaskNotes('G9iCBZhHf8HbJ325nXSUV3')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=G9iCBZhHf8HbJ325nXSUV3"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('G9iCBZhHf8HbJ325nXSUV3')">&#9432;</div>
                         <div class="tasknotes"><p><em>Cranchi Owner’s Manual</em> p.44 photo 23</p>
@@ -2072,7 +2078,7 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="SdHZoVbHLNWTkASY6inRxg" class="completedtask">
+                      <div id="task_SdHZoVbHLNWTkASY6inRxg" class="completedtask">
                         <h4 class="tasktitle">Bilge: Clean bilge</h4>
                         <div class="thingsicon"><a href="things:///show?id=SdHZoVbHLNWTkASY6inRxg"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('SdHZoVbHLNWTkASY6inRxg')">&#9432;</div>
@@ -2122,8 +2128,8 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="J7r13SEFPgeeFZLGXpCzP1" class="completedtask">
-                        <h4 class="tasktitle">Bilge: Ensure that the toilet sea gate is not obstructed</h4>
+                      <div id="task_J7r13SEFPgeeFZLGXpCzP1" class="completedtask">
+                        <h4 class="tasktitle">Bilge: Ensure that the toilet sea gate is not obstructed<span class="seenotesbutton" onclick="toggleTaskNotes('J7r13SEFPgeeFZLGXpCzP1')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=J7r13SEFPgeeFZLGXpCzP1"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('J7r13SEFPgeeFZLGXpCzP1')">&#9432;</div>
                         <div class="tasknotes"><p>…with algae, etc.; clean thoroughly and lubricate.</p>
@@ -2173,8 +2179,8 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="Dm9DhGb9CsUyHkcVJVw25K" class="completedtask">
-                        <h4 class="tasktitle">Bilge: Inspect anti-odor filter </h4>
+                      <div id="task_Dm9DhGb9CsUyHkcVJVw25K" class="completedtask">
+                        <h4 class="tasktitle">Bilge: Inspect anti-odor filter <span class="seenotesbutton" onclick="toggleTaskNotes('Dm9DhGb9CsUyHkcVJVw25K')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=Dm9DhGb9CsUyHkcVJVw25K"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('Dm9DhGb9CsUyHkcVJVw25K')">&#9432;</div>
                         <div class="tasknotes"><p><em>Cranchi Owner’s Manual</em>, p.63</p>
@@ -2224,7 +2230,7 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="5Wm3eCVvYJXpVag6GFCFkQ" class="completedtask">
+                      <div id="task_5Wm3eCVvYJXpVag6GFCFkQ" class="completedtask">
                         <h4 class="tasktitle">Check battery charge level</h4>
                         <div class="thingsicon"><a href="things:///show?id=5Wm3eCVvYJXpVag6GFCFkQ"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('5Wm3eCVvYJXpVag6GFCFkQ')">&#9432;</div>
@@ -2274,7 +2280,7 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="FACjECnwpvU5PgZFmZu9Tc" class="completedtask">
+                      <div id="task_FACjECnwpvU5PgZFmZu9Tc" class="completedtask">
                         <h4 class="tasktitle">Bilge: Check Thru Hulls &amp; Clamps</h4>
                         <div class="thingsicon"><a href="things:///show?id=FACjECnwpvU5PgZFmZu9Tc"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('FACjECnwpvU5PgZFmZu9Tc')">&#9432;</div>
@@ -2408,7 +2414,7 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="91NhYc1iNR87qXw6ndSpcS" class="completedtask">
+                      <div id="task_91NhYc1iNR87qXw6ndSpcS" class="completedtask">
                         <h4 class="tasktitle">Replace fire extinguisher</h4>
                         <div class="thingsicon"><a href="things:///show?id=91NhYc1iNR87qXw6ndSpcS"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('91NhYc1iNR87qXw6ndSpcS')">&#9432;</div>
@@ -2583,7 +2589,7 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="TYQ9PjTPUs68FBCRe9pJHZ" class="completedtask">
+                      <div id="task_TYQ9PjTPUs68FBCRe9pJHZ" class="completedtask">
                         <h4 class="tasktitle">Leave doors partially open.</h4>
                         <div class="thingsicon"><a href="things:///show?id=TYQ9PjTPUs68FBCRe9pJHZ"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('TYQ9PjTPUs68FBCRe9pJHZ')">&#9432;</div>
@@ -2633,8 +2639,8 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="MAeHrNvbNfpgN9ZKsZYhGF" class="completedtask">
-                        <h4 class="tasktitle">Empty the toilet system</h4>
+                      <div id="task_MAeHrNvbNfpgN9ZKsZYhGF" class="completedtask">
+                        <h4 class="tasktitle">Empty the toilet system<span class="seenotesbutton" onclick="toggleTaskNotes('MAeHrNvbNfpgN9ZKsZYhGF')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=MAeHrNvbNfpgN9ZKsZYhGF"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('MAeHrNvbNfpgN9ZKsZYhGF')">&#9432;</div>
                         <div class="tasknotes"><p>Run the pump until there is no longer any water in the bowl, rinse thoroughly with freshwater and clean with suitable detergents.</p>
@@ -2684,8 +2690,8 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="QMShETkx9RXMXZCLGHF1sd" class="completedtask">
-                        <h4 class="tasktitle">Replace elastic rotors of the toilet shredder</h4>
+                      <div id="task_QMShETkx9RXMXZCLGHF1sd" class="completedtask">
+                        <h4 class="tasktitle">Replace elastic rotors of the toilet shredder<span class="seenotesbutton" onclick="toggleTaskNotes('QMShETkx9RXMXZCLGHF1sd')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=QMShETkx9RXMXZCLGHF1sd"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('QMShETkx9RXMXZCLGHF1sd')">&#9432;</div>
                         <div class="tasknotes"><p><em>Cranchi Owner’s Manual</em>, p.45</p>
@@ -2932,15 +2938,15 @@ Starboard: 13.22v</p>
 }</pre></div>
                 <table class="tasktable">
                 
-                  <tr class="completedtask soontask">
+                  <tr class="completedtask latetask">
                     <td>
                       <div class="date">
                         3/28/2023
                       </div>
                     </td>
                     <td>
-                      <div id="L8a2YGKgKA2iiE1EEibRfa" class="completedtask">
-                        <h4 class="tasktitle">Test for stray current</h4>
+                      <div id="task_L8a2YGKgKA2iiE1EEibRfa" class="completedtask">
+                        <h4 class="tasktitle">Test for stray current<span class="seenotesbutton" onclick="toggleTaskNotes('L8a2YGKgKA2iiE1EEibRfa')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=L8a2YGKgKA2iiE1EEibRfa"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('L8a2YGKgKA2iiE1EEibRfa')">&#9432;</div>
                         <div class="tasknotes"><p>Use amp clamp meter on shore power cable. Reading should be zero (or &lt; 30 mA)</p>
@@ -2980,8 +2986,8 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="SKX17qARC7zCp7kEp3RQqZ" class="completedtask">
-                        <h4 class="tasktitle">Inspect DTS wiring</h4>
+                      <div id="task_SKX17qARC7zCp7kEp3RQqZ" class="completedtask">
+                        <h4 class="tasktitle">Inspect DTS wiring<span class="seenotesbutton" onclick="toggleTaskNotes('SKX17qARC7zCp7kEp3RQqZ')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=SKX17qARC7zCp7kEp3RQqZ"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('SKX17qARC7zCp7kEp3RQqZ')">&#9432;</div>
                         <div class="tasknotes"><ul>
@@ -3036,7 +3042,7 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="Vw85kexhQgUqWa2McEffYb" class="completedtask">
+                      <div id="task_Vw85kexhQgUqWa2McEffYb" class="completedtask">
                         <h4 class="tasktitle">Carefully clean the battery terminals and check electrolyte levels.</h4>
                         <div class="thingsicon"><a href="things:///show?id=Vw85kexhQgUqWa2McEffYb"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('Vw85kexhQgUqWa2McEffYb')">&#9432;</div>
@@ -3086,7 +3092,7 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="KRTmneAe8mA4ohkHV7Eb1p" class="completedtask">
+                      <div id="task_KRTmneAe8mA4ohkHV7Eb1p" class="completedtask">
                         <h4 class="tasktitle">Treat all electric contacts with a protective agent (CRC marine protector).</h4>
                         <div class="thingsicon"><a href="things:///show?id=KRTmneAe8mA4ohkHV7Eb1p"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('KRTmneAe8mA4ohkHV7Eb1p')">&#9432;</div>
@@ -3136,7 +3142,7 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="VH5JhsetdrNW98yx6JuBFa" class="completedtask">
+                      <div id="task_VH5JhsetdrNW98yx6JuBFa" class="completedtask">
                         <h4 class="tasktitle">Test start batteries</h4>
                         <div class="thingsicon"><a href="things:///show?id=VH5JhsetdrNW98yx6JuBFa"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('VH5JhsetdrNW98yx6JuBFa')">&#9432;</div>
@@ -3653,7 +3659,7 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="44TqDDoPRGRrLoYuziSkHE" class="completedtask">
+                      <div id="task_44TqDDoPRGRrLoYuziSkHE" class="completedtask">
                         <h4 class="tasktitle">Clean helm gauges with a damp cloth or with Invisible Glass</h4>
                         <div class="thingsicon"><a href="things:///show?id=44TqDDoPRGRrLoYuziSkHE"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('44TqDDoPRGRrLoYuziSkHE')">&#9432;</div>
@@ -3703,7 +3709,7 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="5b2rNTC8vShPzXinoZe65n" class="completedtask">
+                      <div id="task_5b2rNTC8vShPzXinoZe65n" class="completedtask">
                         <h4 class="tasktitle">Clean scuppers (4)</h4>
                         <div class="thingsicon"><a href="things:///show?id=5b2rNTC8vShPzXinoZe65n"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('5b2rNTC8vShPzXinoZe65n')">&#9432;</div>
@@ -3753,7 +3759,7 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="UYwwdZvNeXEEkwsnzqFV7L" class="completedtask">
+                      <div id="task_UYwwdZvNeXEEkwsnzqFV7L" class="completedtask">
                         <h4 class="tasktitle">Update engine hours</h4>
                         <div class="thingsicon"><a href="things:///show?id=UYwwdZvNeXEEkwsnzqFV7L"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('UYwwdZvNeXEEkwsnzqFV7L')">&#9432;</div>
@@ -3803,7 +3809,7 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="Sh4qy8RfL5KxN7CiYA53KR" class="completedtask">
+                      <div id="task_Sh4qy8RfL5KxN7CiYA53KR" class="completedtask">
                         <h4 class="tasktitle">Clean the seating</h4>
                         <div class="thingsicon"><a href="things:///show?id=Sh4qy8RfL5KxN7CiYA53KR"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('Sh4qy8RfL5KxN7CiYA53KR')">&#9432;</div>
@@ -3853,7 +3859,7 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="TM9MiY4LZrVw2qtvXKneri" class="completedtask">
+                      <div id="task_TM9MiY4LZrVw2qtvXKneri" class="completedtask">
                         <h4 class="tasktitle">Inspect equipment </h4>
                         <div class="thingsicon"><a href="things:///show?id=TM9MiY4LZrVw2qtvXKneri"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('TM9MiY4LZrVw2qtvXKneri')">&#9432;</div>
@@ -3893,8 +3899,8 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="X6EyMJswPyJ8mFFJdJfLBR" class="completedtask">
-                        <h4 class="tasktitle">Refrigerator maintenance</h4>
+                      <div id="task_X6EyMJswPyJ8mFFJdJfLBR" class="completedtask">
+                        <h4 class="tasktitle">Refrigerator maintenance<span class="seenotesbutton" onclick="toggleTaskNotes('X6EyMJswPyJ8mFFJdJfLBR')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=X6EyMJswPyJ8mFFJdJfLBR"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('X6EyMJswPyJ8mFFJdJfLBR')">&#9432;</div>
                         <div class="tasknotes"><p>Cleaning the refrigerator and leave the door ajar to provide adequate ventilation</p>
@@ -3944,8 +3950,8 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="93oF7zjfk2S5VFPLRBTxym" class="completedtask">
-                        <h4 class="tasktitle">Empty the fresh water tank</h4>
+                      <div id="task_93oF7zjfk2S5VFPLRBTxym" class="completedtask">
+                        <h4 class="tasktitle">Empty the fresh water tank<span class="seenotesbutton" onclick="toggleTaskNotes('93oF7zjfk2S5VFPLRBTxym')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=93oF7zjfk2S5VFPLRBTxym"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('93oF7zjfk2S5VFPLRBTxym')">&#9432;</div>
                         <div class="tasknotes"><p>…by opening all the freshwater system taps and run the pump until the water tank is empty. Close all the taps and turn off the pump.</p>
@@ -3995,7 +4001,7 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="TABz2n1TXDZkTKgyYrQGUN" class="completedtask">
+                      <div id="task_TABz2n1TXDZkTKgyYrQGUN" class="completedtask">
                         <h4 class="tasktitle">Hull: Inspect hull zinc anode</h4>
                         <div class="thingsicon"><a href="things:///show?id=TABz2n1TXDZkTKgyYrQGUN"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('TABz2n1TXDZkTKgyYrQGUN')">&#9432;</div>
@@ -4045,7 +4051,7 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="CitmQYkNKKUA3NsL1R6PX8" class="completedtask">
+                      <div id="task_CitmQYkNKKUA3NsL1R6PX8" class="completedtask">
                         <h4 class="tasktitle">Winterize: Close sea valves</h4>
                         <div class="thingsicon"><a href="things:///show?id=CitmQYkNKKUA3NsL1R6PX8"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('CitmQYkNKKUA3NsL1R6PX8')">&#9432;</div>
@@ -4096,7 +4102,7 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="Np47xgPd2F9zk8sB9oagy" class="completedtask">
+                      <div id="task_Np47xgPd2F9zk8sB9oagy" class="completedtask">
                         <h4 class="tasktitle">Winterize: Cover fuel tank vent</h4>
                         <div class="thingsicon"><a href="things:///show?id=Np47xgPd2F9zk8sB9oagy"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('Np47xgPd2F9zk8sB9oagy')">&#9432;</div>
@@ -4147,7 +4153,7 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="7xzEoxjTanMw443diiD6Jf" class="completedtask">
+                      <div id="task_7xzEoxjTanMw443diiD6Jf" class="completedtask">
                         <h4 class="tasktitle">Winterize: Empty water from toilet</h4>
                         <div class="thingsicon"><a href="things:///show?id=7xzEoxjTanMw443diiD6Jf"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('7xzEoxjTanMw443diiD6Jf')">&#9432;</div>
@@ -4198,7 +4204,7 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="SDq6Sfm7tG7LnA2yjAat3Q" class="completedtask">
+                      <div id="task_SDq6Sfm7tG7LnA2yjAat3Q" class="completedtask">
                         <h4 class="tasktitle">Winterize: remove all water from bilge</h4>
                         <div class="thingsicon"><a href="things:///show?id=SDq6Sfm7tG7LnA2yjAat3Q"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('SDq6Sfm7tG7LnA2yjAat3Q')">&#9432;</div>
@@ -4249,8 +4255,8 @@ Starboard: 13.22v</p>
                       </div>
                     </td>
                     <td>
-                      <div id="HtUMsE6xXM4yNwB1RRxbkj" class="completedtask">
-                        <h4 class="tasktitle">Check the status of anti-fouling paint on the hull</h4>
+                      <div id="task_HtUMsE6xXM4yNwB1RRxbkj" class="completedtask">
+                        <h4 class="tasktitle">Check the status of anti-fouling paint on the hull<span class="seenotesbutton" onclick="toggleTaskNotes('HtUMsE6xXM4yNwB1RRxbkj')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=HtUMsE6xXM4yNwB1RRxbkj"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('HtUMsE6xXM4yNwB1RRxbkj')">&#9432;</div>
                         <div class="tasknotes"><p>Sandpaper to remove the “dead” layer and then reapply a coat of fresh product (see the anti-fouling manufacturer’s detailed instructions).</p>
@@ -4917,15 +4923,15 @@ Starboard: 13.22v</p>
 }</pre></div>
                 <table class="tasktable">
                 
-                  <tr class="completedtask soontask">
+                  <tr class="completedtask latetask">
                     <td>
                       <div class="date">
                         3/28/2023
                       </div>
                     </td>
                     <td>
-                      <div id="58Kw6ijj6go4k4kiYZxAcr" class="completedtask">
-                        <h4 class="tasktitle">Check power trim fluid level</h4>
+                      <div id="task_58Kw6ijj6go4k4kiYZxAcr" class="completedtask">
+                        <h4 class="tasktitle">Check power trim fluid level<span class="seenotesbutton" onclick="toggleTaskNotes('58Kw6ijj6go4k4kiYZxAcr')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=58Kw6ijj6go4k4kiYZxAcr"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('58Kw6ijj6go4k4kiYZxAcr')">&#9432;</div>
                         <div class="tasknotes"><p><em>Mercury Operation and Maintenance Manual</em>, page 88</p>
@@ -4966,15 +4972,15 @@ Starboard: 13.22v</p>
                     </td>
                   </tr>
                   
-                  <tr class="completedtask soontask">
+                  <tr class="completedtask latetask">
                     <td>
                       <div class="date">
                         3/28/2023
                       </div>
                     </td>
                     <td>
-                      <div id="PmExvoZ6f6ZeYxuH8NPfhv" class="completedtask">
-                        <h4 class="tasktitle">Check the hydraulic steering fluid level </h4>
+                      <div id="task_PmExvoZ6f6ZeYxuH8NPfhv" class="completedtask">
+                        <h4 class="tasktitle">Check the hydraulic steering fluid level <span class="seenotesbutton" onclick="toggleTaskNotes('PmExvoZ6f6ZeYxuH8NPfhv')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=PmExvoZ6f6ZeYxuH8NPfhv"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('PmExvoZ6f6ZeYxuH8NPfhv')">&#9432;</div>
                         <div class="tasknotes"><p><em>Mercury Operation and Maintenance Manual</em>, page 88-89:</p>
@@ -5008,15 +5014,15 @@ Starboard: 13.22v</p>
                     </td>
                   </tr>
                   
-                  <tr class="completedtask soontask">
+                  <tr class="completedtask latetask">
                     <td>
                       <div class="date">
                         3/28/2023
                       </div>
                     </td>
                     <td>
-                      <div id="Kkp9AUXvuPVXp76Rfasmfv" class="completedtask">
-                        <h4 class="tasktitle">Clean and wax cowl </h4>
+                      <div id="task_Kkp9AUXvuPVXp76Rfasmfv" class="completedtask">
+                        <h4 class="tasktitle">Clean and wax cowl <span class="seenotesbutton" onclick="toggleTaskNotes('Kkp9AUXvuPVXp76Rfasmfv')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=Kkp9AUXvuPVXp76Rfasmfv"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('Kkp9AUXvuPVXp76Rfasmfv')">&#9432;</div>
                         <div class="tasknotes"><p><em>Mercury Operation and Maintenance Manual</em>, page 67</p>
@@ -5058,15 +5064,15 @@ Starboard: 13.22v</p>
                     </td>
                   </tr>
                   
-                  <tr class="completedtask soontask">
+                  <tr class="completedtask latetask">
                     <td>
                       <div class="date">
                         3/28/2023
                       </div>
                     </td>
                     <td>
-                      <div id="5tZNL94ayg8mVyW8VNgw3L" class="completedtask">
-                        <h4 class="tasktitle">Flush the cooling system</h4>
+                      <div id="task_5tZNL94ayg8mVyW8VNgw3L" class="completedtask">
+                        <h4 class="tasktitle">Flush the cooling system<span class="seenotesbutton" onclick="toggleTaskNotes('5tZNL94ayg8mVyW8VNgw3L')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=5tZNL94ayg8mVyW8VNgw3L"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('5tZNL94ayg8mVyW8VNgw3L')">&#9432;</div>
                         <div class="tasknotes"><p><em>Mercury Operation and Maintenance Manual</em>, page 70:</p>
@@ -5109,15 +5115,15 @@ NOTE: The outboard can be tilted or in the vertical operating position during fl
                     </td>
                   </tr>
                   
-                  <tr class="completedtask soontask">
+                  <tr class="completedtask latetask">
                     <td>
                       <div class="date">
                         3/28/2023
                       </div>
                     </td>
                     <td>
-                      <div id="CNqey65AsHPRrzPkZthKpW" class="completedtask">
-                        <h4 class="tasktitle">Replace inline fuel filter</h4>
+                      <div id="task_CNqey65AsHPRrzPkZthKpW" class="completedtask">
+                        <h4 class="tasktitle">Replace inline fuel filter<span class="seenotesbutton" onclick="toggleTaskNotes('CNqey65AsHPRrzPkZthKpW')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=CNqey65AsHPRrzPkZthKpW"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('CNqey65AsHPRrzPkZthKpW')">&#9432;</div>
                         <div class="tasknotes"><p><em>Mercury Operation and Maintenance Manual</em>, page 76: This engine is equipped with an in‐line fuel filter sleeve installed in the fuel inlet hose, inside the engine cowl. The filter captures debris that may be in the fuel line after the vessel mounted fuel filtration system. This filter must be removed after 100 hours of operation and may be either discarded or replaced with a new filter.</p>
@@ -5156,15 +5162,15 @@ NOTE: The outboard can be tilted or in the vertical operating position during fl
                     </td>
                   </tr>
                   
-                  <tr class="completedtask soontask">
+                  <tr class="completedtask latetask">
                     <td>
                       <div class="date">
                         3/28/2023
                       </div>
                     </td>
                     <td>
-                      <div id="7xm7Z5pswtwSPVw7zxFVjT" class="completedtask">
-                        <h4 class="tasktitle">Replace water-separating fuel filter</h4>
+                      <div id="task_7xm7Z5pswtwSPVw7zxFVjT" class="completedtask">
+                        <h4 class="tasktitle">Replace water-separating fuel filter<span class="seenotesbutton" onclick="toggleTaskNotes('7xm7Z5pswtwSPVw7zxFVjT')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=7xm7Z5pswtwSPVw7zxFVjT"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('7xm7Z5pswtwSPVw7zxFVjT')">&#9432;</div>
                         <div class="tasknotes"><p><em>Mercury Operation and Maintenance Manual</em>, page 77: This engine requires a vessel mounted water‐separating fuel filter. The filter should be replaced annually or every 100 hours, whichever occurs first.</p>
@@ -5210,15 +5216,15 @@ NOTE: The outboard can be tilted or in the vertical operating position during fl
                     </td>
                   </tr>
                   
-                  <tr class="completedtask upcomingtask">
+                  <tr class="completedtask soontask">
                     <td>
                       <div class="date">
                         3/31/2023
                       </div>
                     </td>
                     <td>
-                      <div id="8aWcWGeU8Bdz3ZS25gkzLf" class="completedtask">
-                        <h4 class="tasktitle">Clean air filter by wiping with damp towel to remove debris</h4>
+                      <div id="task_8aWcWGeU8Bdz3ZS25gkzLf" class="completedtask">
+                        <h4 class="tasktitle">Clean air filter by wiping with damp towel to remove debris<span class="seenotesbutton" onclick="toggleTaskNotes('8aWcWGeU8Bdz3ZS25gkzLf')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=8aWcWGeU8Bdz3ZS25gkzLf"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('8aWcWGeU8Bdz3ZS25gkzLf')">&#9432;</div>
                         <div class="tasknotes"><p>Mercury Operation and Maintenance Manual*, page 75:</p>
@@ -5267,8 +5273,8 @@ NOTE: The outboard can be tilted or in the vertical operating position during fl
                       </div>
                     </td>
                     <td>
-                      <div id="3X1UgbECQhcCJeFeaP1rgT" class="completedtask">
-                        <h4 class="tasktitle">Inspect prop</h4>
+                      <div id="task_3X1UgbECQhcCJeFeaP1rgT" class="completedtask">
+                        <h4 class="tasktitle">Inspect prop<span class="seenotesbutton" onclick="toggleTaskNotes('3X1UgbECQhcCJeFeaP1rgT')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=3X1UgbECQhcCJeFeaP1rgT"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('3X1UgbECQhcCJeFeaP1rgT')">&#9432;</div>
                         <div class="tasknotes"><p>Inspect for dings, pitting and distortion. Make sure cotter pins are secure. Grip the prop and try moving the shaft - if it’s loose, the cutlass bearing may need to be replaced.</p>
@@ -5318,7 +5324,7 @@ NOTE: The outboard can be tilted or in the vertical operating position during fl
                       </div>
                     </td>
                     <td>
-                      <div id="ToX9zS6iS5intLFSVGfmjK" class="completedtask">
+                      <div id="task_ToX9zS6iS5intLFSVGfmjK" class="completedtask">
                         <h4 class="tasktitle">Inspect accessory drive belt (Mercury Operation and Maintenance Manual, p.87)</h4>
                         <div class="thingsicon"><a href="things:///show?id=ToX9zS6iS5intLFSVGfmjK"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('ToX9zS6iS5intLFSVGfmjK')">&#9432;</div>
@@ -5368,8 +5374,8 @@ NOTE: The outboard can be tilted or in the vertical operating position during fl
                       </div>
                     </td>
                     <td>
-                      <div id="GeDFxA7FotACQEYThrGaPE" class="completedtask">
-                        <h4 class="tasktitle">Inspect fuel line</h4>
+                      <div id="task_GeDFxA7FotACQEYThrGaPE" class="completedtask">
+                        <h4 class="tasktitle">Inspect fuel line<span class="seenotesbutton" onclick="toggleTaskNotes('GeDFxA7FotACQEYThrGaPE')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=GeDFxA7FotACQEYThrGaPE"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('GeDFxA7FotACQEYThrGaPE')">&#9432;</div>
                         <div class="tasknotes"><p>Mercury Operation and Maintenance Manual*, page 76: Visually inspect the fuel line for cracks, swelling, leaks, hardness, or other signs of deterioration or damage. If any of these conditions are found, the fuel line must be replaced.</p>
@@ -5419,7 +5425,7 @@ NOTE: The outboard can be tilted or in the vertical operating position during fl
                       </div>
                     </td>
                     <td>
-                      <div id="54pk3WAau496ToZMJuruvX" class="completedtask">
+                      <div id="task_54pk3WAau496ToZMJuruvX" class="completedtask">
                         <h4 class="tasktitle">Check fuses (Mercury Operation and Maintenance Manual, p.86)</h4>
                         <div class="thingsicon"><a href="things:///show?id=54pk3WAau496ToZMJuruvX"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('54pk3WAau496ToZMJuruvX')">&#9432;</div>
@@ -5469,8 +5475,8 @@ NOTE: The outboard can be tilted or in the vertical operating position during fl
                       </div>
                     </td>
                     <td>
-                      <div id="SxxcZWJfVHcrdwexVMTMVg" class="completedtask">
-                        <h4 class="tasktitle">Inspect anodes (7)</h4>
+                      <div id="task_SxxcZWJfVHcrdwexVMTMVg" class="completedtask">
+                        <h4 class="tasktitle">Inspect anodes (7)<span class="seenotesbutton" onclick="toggleTaskNotes('SxxcZWJfVHcrdwexVMTMVg')">&#8226;&#8226;&#8226;</span></h4>
                         <div class="thingsicon"><a href="things:///show?id=SxxcZWJfVHcrdwexVMTMVg"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('SxxcZWJfVHcrdwexVMTMVg')">&#9432;</div>
                         <div class="tasknotes"><p><em>Mercury Operation and Maintenance Manual</em>, page 79: Two anodes are located on each side of the gearcase, with a third positioned on the underside of the antiventilation plate. Another anode is installed on the bottom of the pedestal. Two more anodes are located on the bottom of each power trim ram.</p>
@@ -5520,7 +5526,7 @@ NOTE: The outboard can be tilted or in the vertical operating position during fl
                       </div>
                     </td>
                     <td>
-                      <div id="5EzNjv5e2HYoCwU8bmhXjP" class="completedtask">
+                      <div id="task_5EzNjv5e2HYoCwU8bmhXjP" class="completedtask">
                         <h4 class="tasktitle">Check the wear status of the transmission zinc plates.</h4>
                         <div class="thingsicon"><a href="things:///show?id=5EzNjv5e2HYoCwU8bmhXjP"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('5EzNjv5e2HYoCwU8bmhXjP')">&#9432;</div>
@@ -5570,7 +5576,7 @@ NOTE: The outboard can be tilted or in the vertical operating position during fl
                       </div>
                     </td>
                     <td>
-                      <div id="7iWv2ou9H9146wnj2DXwxu" class="completedtask">
+                      <div id="task_7iWv2ou9H9146wnj2DXwxu" class="completedtask">
                         <h4 class="tasktitle">Winterize: add fuel stabilizer, etc (Mercury Operation and Maintenance Manual, p.108)</h4>
                         <div class="thingsicon"><a href="things:///show?id=7iWv2ou9H9146wnj2DXwxu"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('7iWv2ou9H9146wnj2DXwxu')">&#9432;</div>
@@ -5856,14 +5862,14 @@ NOTE: The outboard can be tilted or in the vertical operating position during fl
 }</pre></div>
                 <table class="tasktable">
                 
-                  <tr class="completedtask soontask">
+                  <tr class="completedtask latetask">
                     <td>
                       <div class="date">
                         3/28/2023
                       </div>
                     </td>
                     <td>
-                      <div id="DwMW87uMgr2GEP66NuJtrf" class="completedtask">
+                      <div id="task_DwMW87uMgr2GEP66NuJtrf" class="completedtask">
                         <h4 class="tasktitle">Bow thruster: Ensure batteries are in good condition. While running thruster, measure volt output is greater than 10.5v (or 12v motors) and 21v (for 24v motors).</h4>
                         <div class="thingsicon"><a href="things:///show?id=DwMW87uMgr2GEP66NuJtrf"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('DwMW87uMgr2GEP66NuJtrf')">&#9432;</div>
@@ -5896,14 +5902,14 @@ NOTE: The outboard can be tilted or in the vertical operating position during fl
                     </td>
                   </tr>
                   
-                  <tr class="completedtask soontask">
+                  <tr class="completedtask latetask">
                     <td>
                       <div class="date">
                         3/28/2023
                       </div>
                     </td>
                     <td>
-                      <div id="5zwbbTvEFn6ScXEEJyFztB" class="completedtask">
+                      <div id="task_5zwbbTvEFn6ScXEEJyFztB" class="completedtask">
                         <h4 class="tasktitle">Bow thruster: Change Thruster Gearbox Oil (EP90 oil)</h4>
                         <div class="thingsicon"><a href="things:///show?id=5zwbbTvEFn6ScXEEJyFztB"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('5zwbbTvEFn6ScXEEJyFztB')">&#9432;</div>
@@ -5936,14 +5942,14 @@ NOTE: The outboard can be tilted or in the vertical operating position during fl
                     </td>
                   </tr>
                   
-                  <tr class="completedtask soontask">
+                  <tr class="completedtask latetask">
                     <td>
                       <div class="date">
                         3/28/2023
                       </div>
                     </td>
                     <td>
-                      <div id="JkFkvmGzS9iGap2xDNiWBh" class="completedtask">
+                      <div id="task_JkFkvmGzS9iGap2xDNiWBh" class="completedtask">
                         <h4 class="tasktitle">Bow thruster: Change zinc anode</h4>
                         <div class="thingsicon"><a href="things:///show?id=JkFkvmGzS9iGap2xDNiWBh"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('JkFkvmGzS9iGap2xDNiWBh')">&#9432;</div>
@@ -5983,7 +5989,7 @@ NOTE: The outboard can be tilted or in the vertical operating position during fl
                       </div>
                     </td>
                     <td>
-                      <div id="VnWiQBZHKCqATdMcxA9usL" class="completedtask">
+                      <div id="task_VnWiQBZHKCqATdMcxA9usL" class="completedtask">
                         <h4 class="tasktitle">Bow thruster: Check that bolts are fastened securely</h4>
                         <div class="thingsicon"><a href="things:///show?id=VnWiQBZHKCqATdMcxA9usL"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('VnWiQBZHKCqATdMcxA9usL')">&#9432;</div>
@@ -6033,7 +6039,7 @@ NOTE: The outboard can be tilted or in the vertical operating position during fl
                       </div>
                     </td>
                     <td>
-                      <div id="TARvx6KQ87afJadEYD7YVP" class="completedtask">
+                      <div id="task_TARvx6KQ87afJadEYD7YVP" class="completedtask">
                         <h4 class="tasktitle">Bow thruster: Check that the thruster thru-hull is clean and dry</h4>
                         <div class="thingsicon"><a href="things:///show?id=TARvx6KQ87afJadEYD7YVP"><img src="./things3icon.png"></a></div>
                         <div class="infobutton" onclick="toggleJSON('TARvx6KQ87afJadEYD7YVP')">&#9432;</div>
